@@ -1,0 +1,89 @@
+
+##############################################
+Beginning test 1_3_EightConnections
+
+*CMD.........	Starting --id 1 --servername theshire --port 31301 --info "Home of the hobbits" --log-file theshire.log
+[theshire] 	Launching server theshire...
+*CMD.........	Waiting... 0.25
+[theshire] 	Configuring the server socket...
+[theshire] 	Listening for new connections on port 31301
+*CMD.........	Starting --id 2 --servername rivendale --port 31302 --info "Elrond's House" --log-file rivendale.log --connect_to_host theshire --connect_to_port 31301
+[rivendale] 	Launching server rivendale...
+*CMD.........	Waiting... 0.25
+[rivendale] 	Configuring the server socket...
+[rivendale] 	Connecting to remote server theshire:31301...
+[rivendale] 	Connected to another server
+[theshire] 	Accepted a connection from another server[rivendale] 	Listening for new connections on port 31302
+
+[theshire] 	Received b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
+b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
+*CMD.........	Starting --id 3 --servername mirkwood --port 31303 --info "Wood of Greenleaves" --log-file mirkwood.log --connect_to_host rivendale --connect_to_port 31302
+[mirkwood] 	Launching server mirkwood...
+*CMD.........	Waiting... 0.25
+[mirkwood] 	Configuring the server socket...
+[mirkwood] 	Connecting to remote server rivendale:31302...
+[mirkwood] 	Connected to another server
+[mirkwood] 	Listening for new connections on port 31303
+[rivendale] 	Accepted a connection from another server
+[rivendale] 	Received b'\x00\x00\x00\x00\x03\x00\x00\x00\x00\x08\x00\x15mirkwood"Wood of Greenleaves"'
+b'\x00\x00\x00\x00\x03\x00\x00\x00\x00\x08\x00\x15mirkwood"Wood of Greenleaves"'
+*CMD.........	Starting --id 4 --servername lothlorin --port 31304 --info "The Golden Wood" --log-file lothlorien.log --connect_to_host mirkwood --connect_to_port 31303
+[lothlorin] 	Launching server lothlorin...
+*CMD.........	Waiting... 0.25
+[lothlorin] 	Configuring the server socket...
+[lothlorin] 	Connecting to remote server mirkwood:31303...
+[lothlorin] 	Connected to another server
+[mirkwood] 	Accepted a connection from another server
+[lothlorin] 	Listening for new connections on port 31304
+[mirkwood] 	Received b'\x00\x00\x00\x00\x04\x00\x00\x00\x00\t\x00\x11lothlorin"The Golden Wood"'
+b'\x00\x00\x00\x00\x04\x00\x00\x00\x00\t\x00\x11lothlorin"The Golden Wood"'
+*CMD.........	Starting --id 5 --servername isengard --port 31305 --info "Orthanc" --log-file isengard.log --connect_to_host rivendale --connect_to_port 31302
+[isengard] 	Launching server isengard...
+*CMD.........	Waiting... 0.25
+[isengard] 	Configuring the server socket...
+[isengard] 	Connecting to remote server rivendale:31302...
+[rivendale] 	Accepted a connection from another server
+[isengard] 	Connected to another server
+[isengard] 	Listening for new connections on port 31305
+[rivendale] 	Received b'\x00\x00\x00\x00\x05\x00\x00\x00\x00\x08\x00\tisengard"Orthanc"'
+b'\x00\x00\x00\x00\x05\x00\x00\x00\x00\x08\x00\tisengard"Orthanc"'
+*CMD.........	Starting --id 6 --servername minastirith --port 31306 --info "Tower of Guard" --log-file minastirith.log --connect_to_host theshire --connect_to_port 31301
+[minastirith] 	Launching server minastirith...
+*CMD.........	Waiting... 0.25
+[minastirith] 	Configuring the server socket...
+[minastirith] 	Connecting to remote server theshire:31301...
+[minastirith] 	Connected to another server
+[theshire] 	Accepted a connection from another server
+[minastirith] 	Listening for new connections on port 31306
+[theshire] 	Received b'\x00\x00\x00\x00\x06\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'
+b'\x00\x00\x00\x00\x06\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'
+*CMD.........	Starting --id 7 --servername osgiliath --port 31307 --info "Citadel of the Stars" --log-file osgiliath.log --connect_to_host minastiri --connect_to_port 31306
+[osgiliath] 	Launching server osgiliath...
+*CMD.........	Waiting... 0.25
+[osgiliath] 	Configuring the server socket...
+[osgiliath] 	Connecting to remote server minastiri:31306...
+[osgiliath] 	Connected to another server
+[osgiliath] 	Listening for new connections on port 31307
+[minastirith] 	Accepted a connection from another server
+[minastirith] 	Received b'\x00\x00\x00\x00\x07\x00\x00\x00\x00\t\x00\x16osgiliath"Citadel of the Stars"'
+b'\x00\x00\x00\x00\x07\x00\x00\x00\x00\t\x00\x16osgiliath"Citadel of the Stars"'
+*CMD.........	Starting --id 8 --servername barad-dur --port 31308 --info "The Dark Tower" --log-file barad-dur.log --connect_to_host minastiri --connect_to_port 31306
+[barad-dur] 	Launching server barad-dur...
+*CMD.........	Waiting... 0.5
+[barad-dur] 	Configuring the server socket...
+[barad-dur] 	Connecting to remote server minastiri:31306...
+[barad-dur] 	Connected to another server
+[minastirith] 	Accepted a connection from another server
+[barad-dur] 	Listening for new connections on port 31308
+[minastirith] 	Received b'\x00\x00\x00\x00\x08\x00\x00\x00\x00\t\x00\x10barad-dur"The Dark Tower"'
+b'\x00\x00\x00\x00\x08\x00\x00\x00\x00\t\x00\x10barad-dur"The Dark Tower"'
+[theshire] 	Cleaning up the server
+[rivendale] 	Cleaning up the server
+[mirkwood] 	Cleaning up the server
+[lothlorin] 	Cleaning up the server
+[isengard] 	Cleaning up the server
+[minastirith] 	Cleaning up the server
+[osgiliath] 	Cleaning up the server
+[barad-dur] 	Cleaning up the server
+
+Test passed:True

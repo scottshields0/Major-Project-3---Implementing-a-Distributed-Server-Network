@@ -1,0 +1,50 @@
+
+##############################################
+Beginning test 6_1_ClientQuit_OneServer
+
+*CMD.........	Starting --id 1 --servername theshire --port 36101 --info "Home of the Hobbits" --log-file theshire.log
+[theshire] 	Launching server theshire...
+*CMD.........	Waiting... 0.25
+[theshire] 	Configuring the server socket...
+[theshire] 	Listening for new connections on port 36101
+*CMD.........	Starting --id 101 --serverhost theshire --serverport 36101 --username frodobaggins --info "Test info" --log-file frodobaggins.log
+[frodobaggins] 	Launching client frodobaggins...
+*CMD.........	Waiting... 0.25
+[frodobaggins] 	Sending message to b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'
+[theshire] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #101 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network frodobaggins'"
+[frodobaggins] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network frodobaggins'"
+*CMD.........	Starting --id 102 --serverhost theshire --serverport 36101 --username samgamgee --info "Test info" --log-file samgamgee.log
+[samgamgee] 	Launching client samgamgee...
+*CMD.........	Waiting... 0.25
+[samgamgee] 	Sending message to b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'
+[theshire] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'"
+[theshire] 	Sending message to Host ID #102 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
+[theshire] 	Sending message to Host ID #102 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #101 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
+[samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+*CMD.........	Running client command: --username samgamgee --command MESSAGE 101 "Bye Frodo"
+[samgamgee] 	Sending message to b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'
+[theshire] 	Received message from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'"
+*CMD.........	Waiting... 0.25
+[theshire] 	Sending message to Host ID #101 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'"
+[frodobaggins] 	Received message from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'"
+*CMD.........	Running client command: --username frodobaggins --command QUIT "Leaving for the Undying Lands"
+[frodobaggins] 	Sending message to b'\x82\x00\x00\x00e\x00\x00\x00\x1f"Leaving for the Undying Lands"'
+[theshire] 	Received message from Host ID #101 "b'\x82\x00\x00\x00e\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
+*CMD.........	Waiting... 0.5
+[theshire] 	Sending message to Host ID #102 "b'\x82\x00\x00\x00e\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
+[samgamgee] 	Received message from Host ID #101 "b'\x82\x00\x00\x00e\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
+*CMD.........	Running client command: --username samgamgee --command MESSAGE 101 "I will miss you"
+[samgamgee] 	Sending message to b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x11"I will miss you"'
+[theshire] 	Received message from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x11"I will miss you"'"
+*CMD.........	Waiting... 0.5
+[theshire] 	Sending message to Host ID #102 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x01\x00\x00\x00\x0eUnknown ID 101'"
+[samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x01\x00\x00\x00\x0eUnknown ID 101'"
+[theshire] 	Cleaning up the server
+[frodobaggins] 	Server has disconnected!
+[samgamgee] 	Server has disconnected!
+
+Test passed:True

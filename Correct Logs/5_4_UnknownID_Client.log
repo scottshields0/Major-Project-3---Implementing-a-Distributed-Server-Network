@@ -1,0 +1,114 @@
+
+##############################################
+Beginning test 5_4_UnknownID_Client
+
+*CMD.........	Starting --id 1 --servername theshire --port 35401 --info "Home of the Hobbits" --log-file theshire.log
+[theshire] 	Launching server theshire...
+*CMD.........	Waiting... 0.25
+[theshire] 	Configuring the server socket...
+[theshire] 	Listening for new connections on port 35401
+*CMD.........	Starting --id 2 --servername rivendale --port 35402 --info "Elronds House" --log-file rivendale.log --connect_to_host theshire --connect_to_port 35401
+[rivendale] 	Launching server rivendale...
+*CMD.........	Waiting... 0.25
+[rivendale] 	Configuring the server socket...
+[rivendale] 	Connecting to remote server theshire:35401...
+[rivendale] 	Listening for new connections on port 35402
+[theshire] 	Received message from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
+[theshire] 	Sending message to Host ID #2 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+[rivendale] 	Received message from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+*CMD.........	Starting --id 101 --serverhost theshire --serverport 35401 --username frodobaggins --info "Test info" --log-file frodobaggins.log
+[frodobaggins] 	Launching client frodobaggins...
+*CMD.........	Waiting... 0.25
+[frodobaggins] 	Sending message to b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'
+[theshire] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #2 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #101 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network frodobaggins'"
+[rivendale] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+[frodobaggins] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network frodobaggins'"
+*CMD.........	Starting --id 3 --servername grey_havens --port 35403 --info "Gates to the Blessed Realm" --log-file grey_havens.log --connect_to_host theshire --connect_to_port 35401
+[grey_havens] 	Launching server grey_havens...
+*CMD.........	Waiting... 0.25
+[grey_havens] 	Configuring the server socket...
+[grey_havens] 	Connecting to remote server theshire:35401...
+[grey_havens] 	Listening for new connections on port 35403
+[theshire] 	Received message from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x00\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[theshire] 	Sending message to Host ID #3 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+[theshire] 	Sending message to Host ID #3 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x01\t\x00\x0frivendale"Elronds House"'"
+[theshire] 	Sending message to Host ID #3 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #2 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x01\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[rivendale] 	Received message from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x01\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[grey_havens] 	Received message from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+[grey_havens] 	Received message from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x01\t\x00\x0frivendale"Elronds House"'"
+[grey_havens] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+*CMD.........	Starting --id 102 --serverhost theshire --serverport 35401 --username samgamgee --info "Test info" --log-file samgamgee.log
+[samgamgee] 	Launching client samgamgee...
+*CMD.........	Waiting... 0.25
+[samgamgee] 	Sending message to b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'
+[theshire] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'"
+[theshire] 	Sending message to Host ID #2 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[theshire] 	Sending message to Host ID #3 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[theshire] 	Sending message to Host ID #102 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
+[theshire] 	Sending message to Host ID #102 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #101 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[rivendale] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
+[grey_havens] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
+*CMD.........	Starting --id 103 --serverhost rivendale --serverport 35402 --username elrond --info "Test info" --log-file elrond.log
+[elrond] 	Launching client elrond...
+*CMD.........	Waiting... 0.25
+[elrond] 	Sending message to b'\x80\x00\x00\x00g\x00\x00\x00\x00\x06\x00\x0belrond"Test info"'
+[rivendale] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x00\x06\x00\x0belrond"Test info"'"
+[rivendale] 	Sending message to Host ID #1 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
+[rivendale] 	Sending message to Host ID #103 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network elrond'"
+[rivendale] 	Sending message to Host ID #103 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
+[rivendale] 	Sending message to Host ID #103 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
+[theshire] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
+[elrond] 	Received message from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network elrond'"
+[theshire] 	Sending message to Host ID #3 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[elrond] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #101 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[elrond] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
+[theshire] 	Sending message to Host ID #102 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[samgamgee] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[frodobaggins] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[grey_havens] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+*CMD.........	Running client command: --username elrond --command MESSAGE 201 "Testing 1 2 3 4 5"
+[elrond] 	Sending message to b'\x81\x00\x00\x00g\x00\x00\x00\xc9\x00\x00\x00\x13"Testing 1 2 3 4 5"'
+*CMD.........	Waiting... 0.25
+[rivendale] 	Received message from Host ID #103 "b'\x81\x00\x00\x00g\x00\x00\x00\xc9\x00\x00\x00\x13"Testing 1 2 3 4 5"'"
+[rivendale] 	Sending message to Host ID #103 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x00\x00\x00\x0eUnknown ID 201'"
+[elrond] 	Received message from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x00\x00\x00\x0eUnknown ID 201'"
+*CMD.........	Starting --id 104 --serverhost grey_havens --serverport 35403 --username bilbobaggins --info "Test info" --log-file bilbobaggins.log
+[bilbobaggins] 	Launching client bilbobaggins...
+*CMD.........	Waiting... 0.5
+[bilbobaggins] 	Sending message to b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'
+[grey_havens] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'"
+[grey_havens] 	Sending message to Host ID #1 "b'\x80\x00\x00\x00h\x00\x00\x00\x03\x0c\x00\x0bbilbobaggins"Test info"'"
+[grey_havens] 	Sending message to Host ID #104 "b'\x01\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network bilbobaggins'"
+[grey_havens] 	Sending message to Host ID #104 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
+[grey_havens] 	Sending message to Host ID #104 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
+[grey_havens] 	Sending message to Host ID #104 "b'\x80\x00\x00\x00g\x00\x00\x00\x03\x06\x00\x0belrond"Test info"'"
+[bilbobaggins] 	Received message from Host ID #3 "b'\x01\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network bilbobaggins'"
+[theshire] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x03\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
+[theshire] 	Sending message to Host ID #2 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
+[theshire] 	Sending message to Host ID #101 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x03\x06\x00\x0belrond"Test info"'"
+[theshire] 	Sending message to Host ID #102 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[frodobaggins] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[samgamgee] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[rivendale] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[rivendale] 	Sending message to Host ID #103 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+[elrond] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+[theshire] 	Cleaning up the server
+[frodobaggins] 	Server has disconnected!
+[samgamgee] 	Server has disconnected!
+[rivendale] 	Cleaning up the server
+[elrond] 	Server has disconnected!
+[grey_havens] 	Cleaning up the server
+[bilbobaggins] 	Server has disconnected!
+
+Test passed:True

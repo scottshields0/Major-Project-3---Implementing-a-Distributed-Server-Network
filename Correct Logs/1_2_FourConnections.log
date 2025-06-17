@@ -1,0 +1,45 @@
+
+##############################################
+Beginning test 1_2_FourConnections
+
+*CMD.........	Starting --id 123  --servername theshire --port 31201 --info "Home of the hobbits" --log-file theshire.log
+[theshire] 	Launching server theshire...
+*CMD.........	Waiting... 0.25
+[theshire] 	Configuring the server socket...
+[theshire] 	Listening for new connections on port 31201
+*CMD.........	Starting --id 456 --servername rivendale --port 31202 --info "Elrond's House" --log-file rivendale.log --connect_to_host theshire --connect_to_port 31201
+[rivendale] 	Launching server rivendale...
+*CMD.........	Waiting... 0.25
+[rivendale] 	Configuring the server socket...
+[rivendale] 	Connecting to remote server theshire:31201...
+[rivendale] 	Connected to another server
+[theshire] 	Accepted a connection from another server
+[rivendale] 	Listening for new connections on port 31202
+[theshire] 	Received b'\x00\x00\x00\x01\xc8\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
+b'\x00\x00\x00\x01\xc8\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
+*CMD.........	Starting --id 789 --servername minastirith --port 31203 --info "Tower of Guard" --log-file minastirith.log --connect_to_host theshire --connect_to_port 31201
+[minastirith] 	Launching server minastirith...
+*CMD.........	Waiting... 0.25
+[minastirith] 	Configuring the server socket...
+[minastirith] 	Connecting to remote server theshire:31201...
+[minastirith] 	Connected to another server
+[theshire] 	Accepted a connection from another server
+[minastirith] 	Listening for new connections on port 31203
+[theshire] 	Received b'\x00\x00\x00\x03\x15\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'
+b'\x00\x00\x00\x03\x15\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'
+*CMD.........	Starting --id 987 --servername barad-dur --port 31204 --info "the Dark Tower" --log-file barad-dur.log --connect_to_host minastiri --connect_to_port 31203
+[barad-dur] 	Launching server barad-dur...
+*CMD.........	Waiting... 0.5
+[barad-dur] 	Configuring the server socket...
+[barad-dur] 	Connecting to remote server minastiri:31203...
+[barad-dur] 	Connected to another server
+[barad-dur] 	Listening for new connections on port 31204
+[minastirith] 	Accepted a connection from another server
+[minastirith] 	Received b'\x00\x00\x00\x03\xdb\x00\x00\x00\x00\t\x00\x10barad-dur"the Dark Tower"'
+b'\x00\x00\x00\x03\xdb\x00\x00\x00\x00\t\x00\x10barad-dur"the Dark Tower"'
+[theshire] 	Cleaning up the server
+[rivendale] 	Cleaning up the server
+[minastirith] 	Cleaning up the server
+[barad-dur] 	Cleaning up the server
+
+Test passed:True

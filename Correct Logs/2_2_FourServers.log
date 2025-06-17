@@ -1,0 +1,54 @@
+
+##############################################
+Beginning test 2_2_FourServers
+
+*CMD.........	Starting --id 1 --servername theshire --port 11010 --info "Home of the Hobbits" --log-file theshire.log
+[theshire] 	Launching server theshire...
+*CMD.........	Waiting... 0.25
+[theshire] 	Configuring the server socket...
+[theshire] 	Listening for new connections on port 11010
+*CMD.........	Starting --id 2 --servername rivendale --port 11020 --info "Elronds House" --log-file rivendale.log --connect_to_host theshire --connect_to_port 11010
+[rivendale] 	Launching server rivendale...
+*CMD.........	Waiting... 0.25
+[rivendale] 	Configuring the server socket...
+[rivendale] 	Connecting to remote server theshire:11010...
+[rivendale] 	Listening for new connections on port 11020
+[theshire] 	Received message from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
+[theshire] 	Sending message to Host ID #2 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+[rivendale] 	Received message from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+*CMD.........	Starting --id 3 --servername grey_havens --port 11030 --info "Gates to the Blessed Realm" --log-file grey_havens.log --connect_to_host theshire --connect_to_port 11010
+[grey_havens] 	Launching server grey_havens...
+*CMD.........	Waiting... 0.25
+[grey_havens] 	Configuring the server socket...
+[grey_havens] 	Connecting to remote server theshire:11010...
+[grey_havens] 	Listening for new connections on port 11030
+[theshire] 	Received message from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x00\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[theshire] 	Sending message to Host ID #3 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+[theshire] 	Sending message to Host ID #3 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x01\t\x00\x0frivendale"Elronds House"'"
+[theshire] 	Sending message to Host ID #2 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x01\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[rivendale] 	Received message from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x01\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[grey_havens] 	Received message from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x01\x08\x00\x15theshire"Home of the Hobbits"'"
+[grey_havens] 	Received message from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x01\t\x00\x0frivendale"Elronds House"'"
+*CMD.........	Starting --id 4 --servername lothlorien --port 11040 --info "The Golden Wood" --log-file lothlorien.log --connect_to_host rivendale --connect_to_port 11020
+[lothlorien] 	Launching server lothlorien...
+*CMD.........	Waiting... 0.5
+[lothlorien] 	Configuring the server socket...
+[lothlorien] 	Connecting to remote server rivendale:11020...
+[lothlorien] 	Listening for new connections on port 11040
+[rivendale] 	Received message from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x00\n\x00\x11lothlorien"The Golden Wood"'"
+[rivendale] 	Sending message to Host ID #4 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x02\t\x00\x0frivendale"Elronds House"'"
+[rivendale] 	Sending message to Host ID #4 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x02\x08\x00\x15theshire"Home of the Hobbits"'"
+[rivendale] 	Sending message to Host ID #4 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x02\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[rivendale] 	Sending message to Host ID #1 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x02\n\x00\x11lothlorien"The Golden Wood"'"
+[theshire] 	Received message from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x02\n\x00\x11lothlorien"The Golden Wood"'"
+[lothlorien] 	Received message from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x02\t\x00\x0frivendale"Elronds House"'"
+[theshire] 	Sending message to Host ID #3 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x01\n\x00\x11lothlorien"The Golden Wood"'"
+[lothlorien] 	Received message from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x02\x08\x00\x15theshire"Home of the Hobbits"'"
+[lothlorien] 	Received message from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x02\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+[grey_havens] 	Received message from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x01\n\x00\x11lothlorien"The Golden Wood"'"
+[theshire] 	Cleaning up the server
+[rivendale] 	Cleaning up the server
+[grey_havens] 	Cleaning up the server
+[lothlorien] 	Cleaning up the server
+
+Test passed:True
