@@ -76,7 +76,7 @@ class CRCServer(object):
         * self.request_terminate (bool): a flag used by the testing application to indicate whether your code
             should continue running or shutdown. You should NOT change the value of this variable in your code
         
-        TODO: Create your selector and store it in self.sel (see comment below).
+        TODO: Create your selector and store it in self.sel
                 
         Args:
             options (Options): an object containing various properties used to configure the server
@@ -87,7 +87,7 @@ class CRCServer(object):
         """
 
         # TODO: Create your selector and store it in self.sel
-        self.sel = None
+        self.sel = selectors.DefaultSelector()
 
 
         # The following four variables will be used to track information about the state of the network
@@ -189,9 +189,14 @@ class CRCServer(object):
         """        
         self.print_info("Configuring the server socket...")
 
-        # TODO: Implement the above functionality
+        # Create TCP server socket
+        server_socket = socket(AF_INET, SOCK_STREAM)
+        server_socket.bind(('', self.port))
+        server_socket.listen()
         
-
+        # Make socket non-blocking and register with selector
+        server_socket.setblocking(False)
+        self.sel.register(server_socket, selectors.EVENT_READ, None)  # None data indicates this is the server socket
 
     def connect_to_server(self):
         """ This function is responsible for connecting to a remote CRC server upon starting this server. Each
@@ -216,9 +221,17 @@ class CRCServer(object):
         """
         self.print_info("Connecting to remote server %s:%i..." % (self.connect_to_host, self.connect_to_port))
 
-        # TODO: Implement the above functionality
-
-
+        # Create TCP socket and connect
+        client_socket = socket(AF_INET, SOCK_STREAM)
+        client_socket.connect((self.connect_to_host_addr, self.connect_to_port))
+        
+        # Make socket non-blocking and register with selector
+        client_socket.setblocking(False)
+        connection_data = BaseConnectionData()
+        self.sel.register(client_socket, selectors.EVENT_READ | selectors.EVENT_WRITE, connection_data)
+        
+        # Create and send server registration message
+        connection_data.write_buffer = ServerRegistrationMessage.bytes(self.id, 0, self.server_name, self.server_info)
 
     def check_IO_devices_for_messages(self):
         """ This function manages the main loop responsible for processing input and output on all sockets 
@@ -249,10 +262,19 @@ class CRCServer(object):
         self.print_info("Listening for new connections on port " + str(self.port))
         
         while not self.request_terminate:
-            # TODO: Implement the above functionality
-            pass    
-
-
+            # Get list of ready sockets with timeout
+            events = self.sel.select(timeout=0.1)
+            
+            for key, mask in events:
+                if key.data is None:
+                    # This is the server socket
+                    self.accept_new_connection(key)
+                else:
+                    # This is a client/server connection socket
+                    self.handle_io_device_events(key, mask)
+                    
+        # Clean up when terminating
+        self.cleanup()
 
     def cleanup(self):
         """ This function handles releasing all allocated resources associated with this server (i.e. our 
@@ -272,8 +294,22 @@ class CRCServer(object):
             None        
         """
         self.print_info("Cleaning up the server")
-        # TODO: Implement the above functionality
-        pass
+        
+        # Get all registered sockets and close them
+        for fd in list(self.sel.get_map()):
+            try:
+                # Get the socket from the selector
+                key = self.sel.get_key(fd)
+                # Close the socket
+                key.fileobj.close()
+                # Unregister from selector
+                self.sel.unregister(key.fileobj)
+            except Exception:
+                # Skip any sockets that have already been closed
+                continue
+            
+        # Close the selector
+        self.sel.close()
 
 
 
@@ -297,8 +333,13 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        # Accept the connection
+        conn, addr = io_device.fileobj.accept()
+        conn.setblocking(False)
+        
+        # Register with selector using BaseConnectionData
+        connection_data = BaseConnectionData()
+        self.sel.register(conn, selectors.EVENT_READ | selectors.EVENT_WRITE, connection_data)
 
 
    
@@ -326,8 +367,34 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        # Handle READ events
+        if event_mask & selectors.EVENT_READ:
+            try:
+                recv_data = io_device.fileobj.recv(4096)
+                if recv_data:
+                    # We received data, handle it
+                    self.handle_messages(io_device, recv_data)
+                else:
+                    # No data means connection was closed
+                    self.sel.unregister(io_device.fileobj)
+                    io_device.fileobj.close()
+            except ConnectionError:
+                # Handle connection errors
+                self.sel.unregister(io_device.fileobj)
+                io_device.fileobj.close()
+                
+        # Handle WRITE events
+        if event_mask & selectors.EVENT_WRITE:
+            if io_device.data.write_buffer:
+                # We have data to send
+                try:
+                    sent = io_device.fileobj.send(io_device.data.write_buffer)
+                    # Clear the sent portion of the write buffer
+                    io_device.data.write_buffer = io_device.data.write_buffer[sent:]
+                except ConnectionError:
+                    # Handle connection errors
+                    self.sel.unregister(io_device.fileobj)
+                    io_device.fileobj.close()
 
 
     

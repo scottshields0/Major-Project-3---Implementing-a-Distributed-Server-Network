@@ -1,0 +1,23 @@
+
+##############################################
+Beginning test 1_1_TwoConnections
+
+*CMD.........	Starting --id 12345 --servername theshire --port 31101 --info "Home of the hobbits" --log-file theshire.log
+[theshire] 	Launching server theshire...
+*CMD.........	Waiting... 0.25
+[theshire] 	Configuring the server socket...
+[theshire] 	Listening for new connections on port 31101
+*CMD.........	Starting --id 45678 --servername rivendale --port 31102 --info "Elrond's House" --log-file rivendale.log --connect_to_host theshire --connect_to_port 31101
+[rivendale] 	Launching server rivendale...
+*CMD.........	Waiting... 0.5
+[rivendale] 	Configuring the server socket...
+[rivendale] 	Connecting to remote server theshire:31101...
+[rivendale] 	Connected to another server
+[rivendale] 	Listening for new connections on port 31102
+[theshire] 	Accepted a connection from another server
+[theshire] 	Received b'\x00\x00\x00\xb2n\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
+b'\x00\x00\x00\xb2n\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
+[theshire] 	Cleaning up the server
+[rivendale] 	Cleaning up the server
+
+Test passed:True
