@@ -1,0 +1,19 @@
+
+##############################################
+Beginning test 3_1_OneServer_OneClient
+
+*CMD.........	Starting --id 1 --servername theshire --port 33101 --info "Home of the Hobbits" --log-file theshire.log
+[theshire] 	Launching server theshire...
+*CMD.........	Waiting... 0.25
+[theshire] 	Configuring the server socket...
+[theshire] 	Listening for new connections on port 33101
+*CMD.........	Starting --id 101 --serverhost theshire --serverport 33101 --username frodobaggins --info "Test info" --log-file frodobaggins.log
+[frodobaggins] 	Launching client frodobaggins...
+*CMD.........	Waiting... 0.5
+[frodobaggins] 	Sending message to b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'
+[theshire] 	Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'"
+[frodobaggins] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00e\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network frodobaggins'"
+[theshire] 	Cleaning up the server
+[frodobaggins] 	Server has disconnected!
+
+Test passed:True

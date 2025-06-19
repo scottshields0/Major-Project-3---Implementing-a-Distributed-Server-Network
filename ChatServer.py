@@ -506,8 +506,11 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        for client_id in self.adjacent_user_ids:
+            if client_id != ignore_host_id:
+                client_connection = self.hosts_db[client_id]
+                client_connection.write_buffer += message
+
 
 
 
@@ -530,8 +533,7 @@ class CRCServer(object):
             None        
         """
         self.print_info("Sending message to an unknown IO device \"%s\"" % (message))
-        # TODO: Implement the above functionality
-        pass
+        io_device.data.write_buffer += message
 
 ##############################################################################################################
 
@@ -698,8 +700,74 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        # 1. Check for duplicate ID
+        if message.source_id in self.hosts_db:
+            error_msg = StatusUpdateMessage.bytes(
+                self.id,  # from this server
+                0,        # to unknown client (use 0)
+                0x02,     # duplicate ID error code
+                f"A machine has already registered with ID {message.source_id}"
+            )
+            self.send_message_to_unknown_io_device(io_device, error_msg)
+            return
+
+        # 2. Create new client connection data
+        new_client_connection = ClientConnectionData(
+            message.source_id,
+            message.client_name,
+            message.client_info
+        )
+
+        # 3. Determine if this is an adjacent client
+        is_adjacent = (message.last_hop_id == 0)
+        
+        if is_adjacent:
+            # This client connected directly to us
+            new_client_connection.first_link_id = self.id
+            self.adjacent_user_ids.append(message.source_id)
+            # Update socket's associated data
+            self.sel.modify(io_device.fileobj, 
+                           selectors.EVENT_READ | selectors.EVENT_WRITE, 
+                           new_client_connection)
+            
+            # Send welcome message to new adjacent client
+            welcome_msg = StatusUpdateMessage.bytes(
+                self.id,
+                message.source_id,
+                0x00,  # welcome status code
+                f"Welcome to the Clemson Relay Chat network {message.client_name}"
+            )
+            new_client_connection.write_buffer += welcome_msg
+        else:
+            # Non-adjacent client, route through last_hop_id
+            new_client_connection.first_link_id = message.last_hop_id
+
+        # 4. Add to hosts database
+        self.hosts_db[message.source_id] = new_client_connection
+
+        # 5. If adjacent, send information about existing clients
+        if is_adjacent:
+            for host_id, host_data in self.hosts_db.items():
+                if host_id != message.source_id:  # Don't send info about the new client to itself
+                    if isinstance(host_data, ClientConnectionData):
+                        # Create client registration message
+                        reg_msg = ClientRegistrationMessage.bytes(
+                            host_data.id,
+                            self.id,  # we are forwarding, so we are the last hop
+                            host_data.client_name,
+                            host_data.client_info
+                        )
+                        new_client_connection.write_buffer += reg_msg
+
+        # 6. Broadcast new client to network (except back to source)
+        broadcast_msg = ClientRegistrationMessage.bytes(
+            message.source_id,
+            self.id,  # we are forwarding, so we are the last hop
+            message.client_name,
+            message.client_info
+        )
+        self.broadcast_message_to_servers(broadcast_msg, ignore_host_id=message.last_hop_id)
+        self.broadcast_message_to_adjacent_clients(broadcast_msg, ignore_host_id=message.source_id)
 
 ##############################################################################################################
 
