@@ -231,7 +231,10 @@ class CRCServer(object):
         self.sel.register(client_socket, selectors.EVENT_READ | selectors.EVENT_WRITE, connection_data)
         
         # Create and send server registration message
-        connection_data.write_buffer = ServerRegistrationMessage.bytes(self.id, 0, self.server_name, self.server_info)
+        reg_msg = ServerRegistrationMessage.bytes(self.id, 0, self.server_name, self.server_info)
+        connection_data.write_buffer += reg_msg
+        
+        self.print_info("Connected to another server")
 
     def check_IO_devices_for_messages(self):
         """ This function manages the main loop responsible for processing input and output on all sockets 
@@ -440,8 +443,17 @@ class CRCServer(object):
         """
         if destination_id in self.hosts_db:
             self.print_info("Sending message to Host ID #%s \"%s\"" % (destination_id, message))
-            # TODO: Implement the above functionality
-            pass
+            # Get the connection data for the destination host
+            dest_connection = self.hosts_db[destination_id]
+            
+            # Get the ID of the first server we need to send through
+            first_link_id = dest_connection.first_link_id
+            
+            # Get that server's connection data
+            first_link_connection = self.hosts_db[first_link_id]
+            
+            # Add our message to that server's write buffer
+            first_link_connection.write_buffer += message
 
 
 
@@ -467,8 +479,13 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        # Loop through all adjacent server IDs
+        for server_id in self.adjacent_server_ids:
+            # Skip the server we want to ignore (if any)
+            if server_id != ignore_host_id:
+                # Get the server's connection data and add message to its write buffer
+                server_connection = self.hosts_db[server_id]
+                server_connection.write_buffer += message
 
 
 
@@ -558,8 +575,84 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the functionality described above
-        pass
+        # Check for duplicate ID
+        if message.source_id in self.hosts_db:
+            error_msg = StatusUpdateMessage.bytes(
+                self.id, 0, 0x02,
+                f"A machine has already registered with ID {message.source_id}"
+            )
+            self.send_message_to_unknown_io_device(io_device, error_msg)
+            return
+
+        # Create new server connection data
+        new_server_connection = ServerConnectionData(
+            message.source_id, 
+            message.server_name, 
+            message.server_info
+        )
+
+        # Determine if this is an adjacent server by checking if last_hop_id is 0
+        # If last_hop_id is 0, this server connected directly to us
+        is_adjacent = (message.last_hop_id == 0)
+        
+        if is_adjacent:
+            # For adjacent servers, we are their first link
+            new_server_connection.first_link_id = self.id
+            # Add to adjacent servers list
+            self.adjacent_server_ids.append(message.source_id)
+            # Update the socket's associated data
+            self.sel.modify(io_device.fileobj, 
+                           selectors.EVENT_READ | selectors.EVENT_WRITE, 
+                           new_server_connection)
+        else:
+            # For non-adjacent servers, we need to route through the last_hop_id
+            new_server_connection.first_link_id = message.last_hop_id
+
+        # Add the new server to our database
+        self.hosts_db[message.source_id] = new_server_connection
+
+        # If this is an adjacent server, send it information about all existing hosts
+        if is_adjacent:
+            # First, send our own registration
+            reg_msg = ServerRegistrationMessage.bytes(
+                self.id,
+                0,  # we are the source, so last_hop is 0
+                self.server_name,
+                self.server_info
+            )
+            new_server_connection.write_buffer += reg_msg
+
+            # Then send info about all other hosts
+            for host_id, host_data in self.hosts_db.items():
+                # Don't send info about the new server back to itself
+                if host_id != message.source_id:
+                    if isinstance(host_data, ServerConnectionData):
+                        # Create server registration message
+                        reg_msg = ServerRegistrationMessage.bytes(
+                            host_data.id,
+                            self.id,  # we are forwarding, so we are the last hop
+                            host_data.server_name,
+                            host_data.server_info
+                        )
+                        new_server_connection.write_buffer += reg_msg
+                    elif isinstance(host_data, ClientConnectionData):
+                        # Create client registration message
+                        reg_msg = ClientRegistrationMessage.bytes(
+                            host_data.id,
+                            self.id,  # we are forwarding, so we are the last hop
+                            host_data.client_name,
+                            host_data.client_info
+                        )
+                        new_server_connection.write_buffer += reg_msg
+
+        # Broadcast this new server to all other servers (except the one that just registered)
+        broadcast_msg = ServerRegistrationMessage.bytes(
+            message.source_id,
+            self.id,  # we are forwarding, so we are the last hop
+            message.server_name,
+            message.server_info
+        )
+        self.broadcast_message_to_servers(broadcast_msg, ignore_host_id=message.source_id)
 
 ##############################################################################################################
 

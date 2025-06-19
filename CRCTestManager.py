@@ -122,9 +122,9 @@ if __name__ == "__main__":
         # This batch of tests evaluates how your code handles Server Registration messages. 
         # In addition to the methods required for previous tests, you also need to complete the following method
         # to pass these tests: handle_server_registration_message().
-        #'2_1_TwoServers':7,
-        #'2_2_FourServers':6,
-        #'2_3_ElevenServers':5,
+        '2_1_TwoServers':7,
+        '2_2_FourServers':6,
+        '2_3_ElevenServers':5,
 
 
         # This batch of tests evaluates how your code handles Client Registrtion messages. 

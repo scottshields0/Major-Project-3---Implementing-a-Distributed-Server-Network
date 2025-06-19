@@ -13,6 +13,7 @@ Beginning test 1_1_TwoConnections
 [rivendale] 	Configuring the server socket...
 [rivendale] 	Connecting to remote server theshire:31101...
 [rivendale] 	Connected to another server
+[rivendale] 	Connected to another server
 [rivendale] 	Listening for new connections on port 31102
 [theshire] 	Accepted a connection from another server
 [theshire] 	Received b'\x00\x00\x00\xb2n\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
