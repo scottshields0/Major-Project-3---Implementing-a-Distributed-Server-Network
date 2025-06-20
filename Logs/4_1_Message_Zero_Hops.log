@@ -23,8 +23,8 @@ Beginning test 4_1_Message_Zero_Hops
 [samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
 *CMD.........	Running client command: --username samgamgee --command MESSAGE 101 "Testing 1 2 3"
 [samgamgee] 	Sending message to b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0f"Testing 1 2 3"'
-[theshire] 	Received msg from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0f"Testing 1 2 3"'"
 *CMD.........	Waiting... 0.5
+[theshire] 	Received msg from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0f"Testing 1 2 3"'"
 [theshire] 	Sending message to Host ID #101 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0f"Testing 1 2 3"'"
 [frodobaggins] 	Received message from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0f"Testing 1 2 3"'"
 [theshire] 	Cleaning up the server

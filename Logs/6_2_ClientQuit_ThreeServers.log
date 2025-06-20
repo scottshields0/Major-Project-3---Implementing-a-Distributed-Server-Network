@@ -52,10 +52,10 @@ Beginning test 6_2_ClientQuit_ThreeServers
 *CMD.........	Waiting... 0.25
 [samgamgee] 	Sending message to b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'
 [theshire] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'"
-[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
-[grey_havens] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
 [rivendale] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
 [samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
+[grey_havens] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
 [samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
 *CMD.........	Starting --id 103 --serverhost rivendale --serverport 36202 --username elrond --info "Test info" --log-file elrond.log
 [elrond] 	Launching client elrond...
@@ -74,14 +74,14 @@ Beginning test 6_2_ClientQuit_ThreeServers
 *CMD.........	Waiting... 0.25
 [bilbobaggins] 	Sending message to b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'
 [grey_havens] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'"
-[bilbobaggins] 	Received message from Host ID #3 "b'\x01\x00\x00\x00\x03\x00\x00\x00h\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network bilbobaggins'"
 [theshire] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x03\x0c\x00\x0bbilbobaggins"Test info"'"
-[bilbobaggins] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
-[frodobaggins] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #3 "b'\x01\x00\x00\x00\x03\x00\x00\x00h\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network bilbobaggins'"
 [samgamgee] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
 [rivendale] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
-[bilbobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
+[frodobaggins] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
 [elrond] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
 [bilbobaggins] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x03\x06\x00\x0belrond"Test info"'"
 *CMD.........	Running client command: --username elrond --command MESSAGE 104 "Bye Bilbo"
 [elrond] 	Sending message to b'\x81\x00\x00\x00g\x00\x00\x00h\x00\x00\x00\x0b"Bye Bilbo"'
@@ -95,12 +95,12 @@ Beginning test 6_2_ClientQuit_ThreeServers
 [bilbobaggins] 	Received message from Host ID #103 "b'\x81\x00\x00\x00g\x00\x00\x00h\x00\x00\x00\x0b"Bye Bilbo"'"
 *CMD.........	Running client command: --username bilbobaggins --command QUIT "Leaving for the Undying Lands"
 [bilbobaggins] 	Sending message to b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'
-[grey_havens] 	Received msg from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
 *CMD.........	Waiting... 0.5
+[grey_havens] 	Received msg from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
 [theshire] 	Received msg from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
-[frodobaggins] 	Received message from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
-[samgamgee] 	Received message from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
 [rivendale] 	Received msg from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
+[samgamgee] 	Received message from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
+[frodobaggins] 	Received message from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
 [elrond] 	Received message from Host ID #104 "b'\x82\x00\x00\x00h\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
 *CMD.........	Running client command: --username frodobaggins --command MESSAGE 104 "I will miss you"
 [frodobaggins] 	Sending message to b'\x81\x00\x00\x00e\x00\x00\x00h\x00\x00\x00\x11"I will miss you"'
@@ -110,8 +110,8 @@ Beginning test 6_2_ClientQuit_ThreeServers
 [frodobaggins] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00e\x00\x01\x00\x00\x00\x0eUnknown ID 104'"
 [theshire] 	Cleaning up the server
 [frodobaggins] 	Server has disconnected!
-[samgamgee] 	Server has disconnected!
 [rivendale] 	Cleaning up the server
+[samgamgee] 	Server has disconnected!
 [elrond] 	Server has disconnected!
 [grey_havens] 	Cleaning up the server
 [bilbobaggins] 	Server has disconnected!

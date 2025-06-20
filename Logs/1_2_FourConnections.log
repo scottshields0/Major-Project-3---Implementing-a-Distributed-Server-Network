@@ -20,11 +20,11 @@ Beginning test 1_2_FourConnections
 b'\x00\x00\x00\x01\xc8\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
 *CMD.........	Starting --id 789 --servername minastirith --port 31203 --info "Tower of Guard" --log-file minastirith.log --connect_to_host theshire --connect_to_port 31201
 [minastirith] 	Launching server minastirith...
-*CMD.........	Waiting... 0.25
 [minastirith] 	Configuring the server socket...
+*CMD.........	Waiting... 0.25
 [minastirith] 	Connecting to remote server theshire:31201...
-[theshire] 	Accepted a connection from another server
 [minastirith] 	Connected to another server
+[theshire] 	Accepted a connection from another server
 [minastirith] 	Connected to another server
 [minastirith] 	Listening for new connections on port 31203
 [theshire] 	Received b'\x00\x00\x00\x03\x15\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'

@@ -17,8 +17,8 @@ Beginning test 2_1_TwoServers
 [theshire] 	Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
 [rivendale] 	Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x00\x08\x00\x15theshire"Home of the Hobbits"'"
 [theshire] 	Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
-[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
-[rivendale] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
+[rivendale] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
 [theshire] 	Cleaning up the server
 [rivendale] 	Cleaning up the server
 

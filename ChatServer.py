@@ -567,7 +567,7 @@ class CRCServer(object):
         if message.source_id in self.hosts_db:
             error_msg = StatusUpdateMessage.bytes(
                 self.id, 0, 0x02,
-                f"Someone has already registered with ID {message.source_id}"
+                f"A machine has already registered with ID {message.source_id}"
             )
             self.send_message_to_unknown_io_device(io_device, error_msg)
             return

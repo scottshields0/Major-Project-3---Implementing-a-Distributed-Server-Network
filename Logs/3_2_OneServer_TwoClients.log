@@ -22,7 +22,7 @@ Beginning test 3_2_OneServer_TwoClients
 [samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
 [samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
 [theshire] 	Cleaning up the server
-[frodobaggins] 	Server has disconnected!
 [samgamgee] 	Server has disconnected!
+[frodobaggins] 	Server has disconnected!
 
 Test passed:True

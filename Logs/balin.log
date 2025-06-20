@@ -1,73 +1,73 @@
-2025-06-19 23:31:05,802 - IRCServer[27984] - INFO - Launching client balin...
-2025-06-19 23:31:05,825 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'
-2025-06-19 23:31:05,845 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,880 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x05\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,881 - IRCServer[27984] - INFO - Received message from Host ID #5 "b'\x01\x00\x00\x00\x05\x00\x00\x00k\x00\x00\x00\x00\x00/Welcome to the Clemson Relay Chat network balin'"
-2025-06-19 23:31:05,892 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,892 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,893 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,893 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x05\x0c\x00\x0bfrodobaggins"Test info"'"
-2025-06-19 23:31:05,894 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,914 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,914 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,921 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x05\t\x00\x0bsamgamgee"Test info"'"
-2025-06-19 23:31:05,923 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,924 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,925 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,927 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,928 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,929 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,930 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x05\x06\x00\x0belrond"Test info"'"
-2025-06-19 23:31:05,931 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,932 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,934 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x03\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:05,946 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x05\x0c\x00\x0bbilbobaggins"Test info"'"
-2025-06-19 23:31:05,953 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x05\x08\x00\x0bperegrin"Test info"'"
-2025-06-19 23:31:05,955 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x05\x08\x00\x0bmeriadoc"Test info"'"
-2025-06-19 23:31:06,813 - IRCServer[27984] - INFO - Launching client sauron...
-2025-06-19 23:31:06,845 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'
-2025-06-19 23:31:06,867 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,890 - IRCServer[27984] - INFO - Received message from Host ID #11 "b'\x01\x00\x00\x00\x0b\x00\x00\x00l\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network sauron'"
-2025-06-19 23:31:06,891 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x0b\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,909 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x0b\x0c\x00\x0bfrodobaggins"Test info"'"
-2025-06-19 23:31:06,910 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,913 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,915 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,932 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x0b\t\x00\x0bsamgamgee"Test info"'"
-2025-06-19 23:31:06,944 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,944 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,949 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x0b\x06\x00\x0belrond"Test info"'"
-2025-06-19 23:31:06,964 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,965 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,967 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,968 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,970 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,973 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,975 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x0b\x0c\x00\x0bbilbobaggins"Test info"'"
-2025-06-19 23:31:06,997 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,998 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:06,999 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:07,001 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x05\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:07,009 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x0b\x08\x00\x0bperegrin"Test info"'"
-2025-06-19 23:31:07,031 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x03\x06\x00\x0bsauron"Test info"'"
-2025-06-19 23:31:07,038 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x0b\x08\x00\x0bmeriadoc"Test info"'"
-2025-06-19 23:31:07,062 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x0b\x05\x00\x0bbalin"Test info"'"
-2025-06-19 23:31:09,316 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,344 - IRCServer[27984] - INFO - Server has disconnected!
-2025-06-19 23:31:09,346 - IRCServer[27984] - INFO - Server has disconnected!
-2025-06-19 23:31:09,347 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,363 - IRCServer[27984] - INFO - Server has disconnected!
-2025-06-19 23:31:09,365 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,370 - IRCServer[27984] - INFO - Server has disconnected!
-2025-06-19 23:31:09,373 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,384 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,393 - IRCServer[27984] - INFO - Server has disconnected!
-2025-06-19 23:31:09,393 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,405 - IRCServer[27984] - INFO - Server has disconnected!
-2025-06-19 23:31:09,406 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,412 - IRCServer[27984] - INFO - Server has disconnected!
-2025-06-19 23:31:09,470 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,520 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,631 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,634 - IRCServer[27984] - INFO - Cleaning up the server
-2025-06-19 23:31:09,636 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:41:03,697 - IRCServer[9544] - INFO - Launching client balin...
+2025-06-19 23:41:03,702 - IRCServer[9544] - INFO - Sending message to b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'
+2025-06-19 23:41:03,704 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,705 - IRCServer[9544] - INFO - Received message from Host ID #5 "b'\x01\x00\x00\x00\x05\x00\x00\x00k\x00\x00\x00\x00\x00/Welcome to the Clemson Relay Chat network balin'"
+2025-06-19 23:41:03,706 - IRCServer[9544] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x05\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:41:03,707 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x05\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,708 - IRCServer[9544] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x05\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:41:03,716 - IRCServer[9544] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,716 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,717 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,718 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,722 - IRCServer[9544] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x05\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:41:03,732 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,733 - IRCServer[9544] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,733 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,734 - IRCServer[9544] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,735 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,739 - IRCServer[9544] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x05\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:41:03,740 - IRCServer[9544] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,742 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,758 - IRCServer[9544] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x03\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,766 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,766 - IRCServer[9544] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,769 - IRCServer[9544] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:03,769 - IRCServer[9544] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x05\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:41:03,809 - IRCServer[9544] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x05\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:41:04,700 - IRCServer[9544] - INFO - Launching client sauron...
+2025-06-19 23:41:04,705 - IRCServer[9544] - INFO - Sending message to b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'
+2025-06-19 23:41:04,710 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,725 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x0b\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,726 - IRCServer[9544] - INFO - Received message from Host ID #11 "b'\x01\x00\x00\x00\x0b\x00\x00\x00l\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network sauron'"
+2025-06-19 23:41:04,736 - IRCServer[9544] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x0b\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:41:04,738 - IRCServer[9544] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,738 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,739 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,746 - IRCServer[9544] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x0b\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:41:04,751 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,751 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,752 - IRCServer[9544] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x0b\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:41:04,756 - IRCServer[9544] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,757 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,758 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,759 - IRCServer[9544] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,761 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,762 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,765 - IRCServer[9544] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x0b\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:41:04,770 - IRCServer[9544] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,770 - IRCServer[9544] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,773 - IRCServer[9544] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,786 - IRCServer[9544] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x05\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,787 - IRCServer[9544] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x0b\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:41:04,811 - IRCServer[9544] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x03\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:41:04,825 - IRCServer[9544] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x0b\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:41:04,839 - IRCServer[9544] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x0b\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:41:07,201 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,207 - IRCServer[9544] - INFO - Server has disconnected!
+2025-06-19 23:41:07,208 - IRCServer[9544] - INFO - Server has disconnected!
+2025-06-19 23:41:07,212 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,233 - IRCServer[9544] - INFO - Server has disconnected!
+2025-06-19 23:41:07,236 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,274 - IRCServer[9544] - INFO - Server has disconnected!
+2025-06-19 23:41:07,278 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,303 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,306 - IRCServer[9544] - INFO - Server has disconnected!
+2025-06-19 23:41:07,307 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,316 - IRCServer[9544] - INFO - Server has disconnected!
+2025-06-19 23:41:07,317 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,332 - IRCServer[9544] - INFO - Server has disconnected!
+2025-06-19 23:41:07,339 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,414 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,434 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,436 - IRCServer[9544] - INFO - Cleaning up the server
+2025-06-19 23:41:07,438 - IRCServer[9544] - INFO - Server has disconnected!

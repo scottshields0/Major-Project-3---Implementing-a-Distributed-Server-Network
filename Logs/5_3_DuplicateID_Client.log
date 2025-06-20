@@ -52,10 +52,10 @@ Beginning test 5_3_DuplicateID_Client
 *CMD.........	Waiting... 0.25
 [samgamgee] 	Sending message to b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'
 [theshire] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'"
-[rivendale] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
-[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
-[samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
 [grey_havens] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
+[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[rivendale] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
 [samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
 *CMD.........	Starting --id 103 --serverhost rivendale --serverport 35302 --username elrond --info "Test info" --log-file elrond.log
 [elrond] 	Launching client elrond...
@@ -65,8 +65,8 @@ Beginning test 5_3_DuplicateID_Client
 [theshire] 	Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
 [elrond] 	Received message from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00g\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network elrond'"
 [frodobaggins] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
-[grey_havens] 	Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
 [samgamgee] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[grey_havens] 	Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
 [elrond] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
 [elrond] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
 *CMD.........	Starting --id 102 --serverhost theshire --serverport 35301 --username gollum --info "Test info" --log-file gollum.log
@@ -83,18 +83,18 @@ Beginning test 5_3_DuplicateID_Client
 [grey_havens] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'"
 [theshire] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x03\x0c\x00\x0bbilbobaggins"Test info"'"
 [bilbobaggins] 	Received message from Host ID #3 "b'\x01\x00\x00\x00\x03\x00\x00\x00h\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network bilbobaggins'"
-[bilbobaggins] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
-[rivendale] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
 [samgamgee] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
 [frodobaggins] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
-[bilbobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
+[rivendale] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
 [elrond] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+[bilbobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
 [bilbobaggins] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x03\x06\x00\x0belrond"Test info"'"
 [theshire] 	Cleaning up the server
 [frodobaggins] 	Server has disconnected!
-[gollum] 	Server has disconnected!
-[samgamgee] 	Server has disconnected!
 [rivendale] 	Cleaning up the server
+[samgamgee] 	Server has disconnected!
+[gollum] 	Server has disconnected!
 [elrond] 	Server has disconnected!
 [grey_havens] 	Cleaning up the server
 [bilbobaggins] 	Server has disconnected!
