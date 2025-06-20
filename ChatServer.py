@@ -75,8 +75,6 @@ class CRCServer(object):
             connect to any other servers on startup.
         * self.request_terminate (bool): a flag used by the testing application to indicate whether your code
             should continue running or shutdown. You should NOT change the value of this variable in your code
-        
-        TODO: Create your selector and store it in self.sel
                 
         Args:
             options (Options): an object containing various properties used to configure the server
@@ -90,21 +88,23 @@ class CRCServer(object):
         self.sel = selectors.DefaultSelector()
 
         # Network state tracking
-        self.hosts_db = {}                    # Maps IDs to ServerConnectionData/ClientConnectionData objects
-        self.adjacent_server_ids = []         # IDs of directly connected servers
-        self.adjacent_user_ids = []           # IDs of directly connected clients
-        self.status_updates_log = []          # Store status messages for this server
+        self.hosts_db = {}
+        self.adjacent_server_ids = []
+        self.adjacent_user_ids = []
+        self.status_updates_log = []
 
         # Server configuration from options
-        self.id = options.id                            # The numeric ID of this server
-        self.server_name = options.servername           # The name of this server
-        self.server_info = options.info                 # Human-readable information about this server
-        self.port = options.port                        # The port this server listens to for new connections
-        self.connect_to_host = options.connect_to_host  # The printable name of the remote server
-        self.connect_to_host_addr = '127.0.0.1'         # Use this IP address to connect to on startup
-        self.connect_to_port = options.connect_to_port  # The port to connect to on startup
+        self.id = options.id
+        self.server_name = options.servername
+        self.server_info = options.info
+        
+        self.port = options.port
+        self.connect_to_host = options.connect_to_host
+        
+        self.connect_to_host_addr = '127.0.0.1'
+        self.connect_to_port = options.connect_to_port
 
-        self.request_terminate = False                  # Flag used by testing application
+        self.request_terminate = False
 
         # Message handlers mapping
         self.message_handlers = {
@@ -115,7 +115,6 @@ class CRCServer(object):
             0x82: self.handle_client_quit_message,
         }
 
-        # Logging setup
         self.log_file = options.log_file
         self.logger = None
         self.init_logging()
@@ -149,10 +148,6 @@ class CRCServer(object):
         """ This function is responsible for setting up the server socket and registering it with your 
         selector.
         
-        TODO: You need to create a TCP server socket and bind it to self.port (defined in __init__). Once the 
-            socket has been created, register the socket with the selector created in __init__ and start 
-            listening for incoming TCP connectionn requests.
-        
         NOTE: Server sockets are read from, but never written to. This is important when registering the 
             socket with your selector
         NOTE: Later on, you will need to differentiate between the server socket (which accepts new 
@@ -182,13 +177,6 @@ class CRCServer(object):
         """ This function is responsible for connecting to a remote CRC server upon starting this server. Each
         new CRC Server (except for the first one) registers with an existing server on start up. That server 
         is its entry point into the existing CRC server network.
-        
-        TODO: Create a TCP socket and connect it to the remote server that exists at the following address:
-            (self.connect_to_host_addr, self.connect_to_port)
-        TODO: Register this socket with your selector. 
-        TODO: Send a ServerRegistrationMessage to the server you just connected to. All initial server 
-            registration messages MUST have their last_hop_id set to 0. Rebroadcasts of this message should 
-            contain put the ID of the server that repeated the message in the last_hop_id field as normal.
 
         NOTE: Even though you know this is a server, it's best to use a BaseConnectionData object for the data
             parameter to be consistent with how other connections are added. That will get modified when you 
@@ -220,16 +208,6 @@ class CRCServer(object):
         """ This function manages the main loop responsible for processing input and output on all sockets 
         this server is connected to. This is accomplished in a nonblocking manner using the selector created 
         in __init__.
-        
-        TODO: Within the while loop, request a list of all sockets that are ready to perform a nonblocking 
-            operation from the selector. Process those events based on the event type and the type of socket 
-            (either a listening socket, a socket connected to a remote server, a socket connected to a remote 
-            client, or a socket connected to an application whose type is not known yet).
-        TODO: When processing READ events for this server's listening socket, call 
-            self.accept_new_connection(io_device).
-        TODO: When processing events associated with any other socket, call 
-            self.handle_device_io_events(io_device, event_mask).
-        TODO: Call self.cleanup() once the while loop terminates (i.e. the program needs to shut down)
 
         NOTE: All calls to select() MUST be inside the while loop. Select() is itself a blocking call and we 
             need to be able to terminate the server to test its functionality. The server may not be able to  
@@ -262,10 +240,6 @@ class CRCServer(object):
     def cleanup(self):
         """ This function handles releasing all allocated resources associated with this server (i.e. our 
         selector and any sockets opened by this server).
-        
-        TODO: Shut down your listening socket
-        TODO: Shut down and unregister all sockets registered with the selector
-        TODO: Shut down the selector
 
         NOTE: You can get a list of all sockets registered with the selector by accessing a hidden dictionary 
             of the selector: _fd_to_keys. You can extract a list of io_devices from this using the command: 
@@ -295,9 +269,6 @@ class CRCServer(object):
         """ This function is responsible for handling new connection requests from other servers and from 
         clients. This function should be called from self.check_IO_devices_for_messages whenever the listening 
         socket has data that can be read.
-        
-        TODO: Accept the connection request and register it with your selector. All sockets registered here  
-            should be registered for both READ and WRITE events. 
 
         NOTE: You don't know at this point whether new connection requests are comming from a new server or a  
             new client (you'll find that out when processing the registration message sent over the connected  
@@ -323,19 +294,6 @@ class CRCServer(object):
         """ This function is responsible for handling READ and WRITE events for a given IO device. Incomming  
         messages will be read and passed to the appropriate message handler here and the write buffer  
         associated with this socket will be sent over the socket here.
-        
-        TODO: Check to see if this is a READ event and/or a WRITE event (it's possible to be both). 
-        
-        TODO: If this is a read event, read the bytes and pass the read bytes to self.handle_messages() along 
-            with the io_device containing this socket and its associated data object. If no bytes are returned
-            by the call to read() then the machine on the other side of the socket has closed their side of 
-            the connection. You should unregister and close this socket if that happens.
-        
-        TODO: If this is a write event, check the write_buffer stored in the current io_device's associated 
-            data object. If the write_buffer contains any data go ahead and write it to the socket and clear 
-            the write buffer. You must check to see if the write_buffer contains any data as you don't want to
-            send any empty messages. Similarly, you must clear the write buffer after sending because you 
-            don't want to send any duplicate messages
 
         Args:
             io_device (SelectorKey):
@@ -406,9 +364,6 @@ class CRCServer(object):
         """ This is a helper function meant to encapsulate the code needed to send a message to a specific 
         host machine, identified based on the machine's unique ID number.
 
-        TODO: Append the message to the appropriate write_buffer that will get this message (eventually) to 
-            its intended destination.
-
         Args:
             destination_id (int): the ID of the destination machine
             message (bytes): the packed message to be delivered 
@@ -454,9 +409,6 @@ class CRCServer(object):
         servers. Alternatively, if it is not None you should not broadcast the message to any adjacent 
         servers with the ID value included in the parameter.
 
-        TODO: Append the message to the appropriate write_buffers needed to broadcast this message to all 
-            adjacent servers except for servers with IDs equal to the value in ignore_host_id.
-
         Args:
             message (bytes): the packed message to be delivered
             ignore_host_id (int): the ID of a host that this message should not be delievered to 
@@ -482,9 +434,6 @@ class CRCServer(object):
         can simply call both functions. The ignore_host_id parameter serves the same purpose as the parameter
         with the same name in the self.broadcast_message_to_servers() function.
 
-        TODO: Append the message to the appropriate write_buffers needed to broadcast this message to all 
-            adjacent clients except for machines with IDs equal to the value in ignore_host_id.
-
         Args:
             message (bytes): the packed message to be delivered
             ignore_host_id (int): the ID of a host that this message should not be delievered to 
@@ -507,9 +456,6 @@ class CRCServer(object):
         socket the registration message was received over. This method should encapsulate the code needed to 
         send a message across the io_device that was provided to the registration message handler when the 
         error occured.
-
-        TODO: Append the message to the appropriate write_buffer that will get this message (eventually) to 
-            its intended destination.
 
         Args:
             io_device (SelectorKey): An object containing a reference to the socket that the message should be

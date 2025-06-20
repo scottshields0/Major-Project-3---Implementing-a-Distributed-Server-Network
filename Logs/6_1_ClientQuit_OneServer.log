@@ -23,14 +23,14 @@ Beginning test 6_1_ClientQuit_OneServer
 [samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
 *CMD.........	Running client command: --username samgamgee --command MESSAGE 101 "Bye Frodo"
 [samgamgee] 	Sending message to b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'
-*CMD.........	Waiting... 0.25
 [theshire] 	Received msg from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'"
+*CMD.........	Waiting... 0.25
 [theshire] 	Sending message to Host ID #101 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'"
 [frodobaggins] 	Received message from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0b"Bye Frodo"'"
 *CMD.........	Running client command: --username frodobaggins --command QUIT "Leaving for the Undying Lands"
 [frodobaggins] 	Sending message to b'\x82\x00\x00\x00e\x00\x00\x00\x1f"Leaving for the Undying Lands"'
-*CMD.........	Waiting... 0.5
 [theshire] 	Received msg from Host ID #101 "b'\x82\x00\x00\x00e\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
+*CMD.........	Waiting... 0.5
 [samgamgee] 	Received message from Host ID #101 "b'\x82\x00\x00\x00e\x00\x00\x00\x1f"Leaving for the Undying Lands"'"
 *CMD.........	Running client command: --username samgamgee --command MESSAGE 101 "I will miss you"
 [samgamgee] 	Sending message to b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x11"I will miss you"'
@@ -39,7 +39,7 @@ Beginning test 6_1_ClientQuit_OneServer
 [theshire] 	Sending message to Host ID #102 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x01\x00\x00\x00\x0eUnknown ID 101'"
 [samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x01\x00\x00\x00\x0eUnknown ID 101'"
 [theshire] 	Cleaning up the server
-[frodobaggins] 	Server has disconnected!
 [samgamgee] 	Server has disconnected!
+[frodobaggins] 	Server has disconnected!
 
 Test passed:True
