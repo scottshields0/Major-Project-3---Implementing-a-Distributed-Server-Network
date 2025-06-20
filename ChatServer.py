@@ -787,8 +787,13 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        # Check if message is for us (our ID or broadcast 0)
+        if message.destination_id == self.id or message.destination_id == 0:
+            # Log the status message
+            self.status_updates_log.append(message.content)
+        # If not for us and destination exists, forward it
+        elif message.destination_id in self.hosts_db:
+            self.send_message_to_host(message.destination_id, message.bytes)
 
 ##############################################################################################################
 
@@ -808,8 +813,20 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        # Check if destination exists and is a client
+        if (message.destination_id in self.hosts_db and 
+            isinstance(self.hosts_db[message.destination_id], ClientConnectionData)):
+            # Forward the message to destination
+            self.send_message_to_host(message.destination_id, message.bytes)
+        else:
+            # Send Unknown ID status message back to source
+            error_msg = StatusUpdateMessage.bytes(
+                self.id,
+                message.source_id,
+                0x01,  # Unknown ID status code
+                f"Unknown ID {message.destination_id}"
+            )
+            self.send_message_to_host(message.source_id, error_msg)
 
 ##############################################################################################################
 
@@ -829,8 +846,22 @@ class CRCServer(object):
         Returns:
             None        
         """
-        # TODO: Implement the above functionality
-        pass
+        # Check if client exists
+        if message.source_id in self.hosts_db:
+            # Get the client's first_link_id to avoid sending back to the source path
+            client_data = self.hosts_db[message.source_id]
+            ignore_server_id = client_data.first_link_id
+            
+            # Broadcast quit message to network (except back to quitting client's path)
+            self.broadcast_message_to_servers(message.bytes, ignore_host_id=ignore_server_id)
+            self.broadcast_message_to_adjacent_clients(message.bytes, ignore_host_id=message.source_id)
+            
+            # Remove from adjacent_user_ids if it was adjacent
+            if message.source_id in self.adjacent_user_ids:
+                self.adjacent_user_ids.remove(message.source_id)
+            
+            # Remove from hosts database
+            del self.hosts_db[message.source_id]
     
 ##############################################################################################################    
     
