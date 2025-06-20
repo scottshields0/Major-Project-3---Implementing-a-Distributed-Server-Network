@@ -9,8 +9,8 @@ Beginning test 1_1_TwoConnections
 [theshire] 	Listening for new connections on port 31101
 *CMD.........	Starting --id 45678 --servername rivendale --port 31102 --info "Elrond's House" --log-file rivendale.log --connect_to_host theshire --connect_to_port 31101
 [rivendale] 	Launching server rivendale...
-*CMD.........	Waiting... 0.5
 [rivendale] 	Configuring the server socket...
+*CMD.........	Waiting... 0.5
 [rivendale] 	Connecting to remote server theshire:31101...
 [rivendale] 	Connected to another server
 [rivendale] 	Connected to another server

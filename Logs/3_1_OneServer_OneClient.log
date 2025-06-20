@@ -12,5 +12,8 @@ Beginning test 3_1_OneServer_OneClient
 *CMD.........	Waiting... 0.5
 [frodobaggins] 	Sending message to b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'
 [theshire] 	Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x00\x0c\x00\x0bfrodobaggins"Test info"'"
+[frodobaggins] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00e\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network frodobaggins'"
+[theshire] 	Cleaning up the server
+[frodobaggins] 	Server has disconnected!
 
-Test passed:False
+Test passed:True

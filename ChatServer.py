@@ -86,61 +86,39 @@ class CRCServer(object):
             None        
         """
 
-        # TODO: Create your selector and store it in self.sel
+        # Create selector for non-blocking I/O
         self.sel = selectors.DefaultSelector()
 
+        # Network state tracking
+        self.hosts_db = {}                    # Maps IDs to ServerConnectionData/ClientConnectionData objects
+        self.adjacent_server_ids = []         # IDs of directly connected servers
+        self.adjacent_user_ids = []           # IDs of directly connected clients
+        self.status_updates_log = []          # Store status messages for this server
 
-        # The following four variables will be used to track information about the state of the network
-        # -----------------------------------------------------------------------------
-        # You will create an instance of ServerData or ClientData whenever receiving a registration 
-        # message. In addition to updating the socket's associated ConnectionData object, you should also
-        # store the new ServerData or ClientData object in the hosts_db dictionary. This will allow you to
-        # access information about all known hosts on the network whenever you need it. The key for a given
-        # ServerData or ClientData object should be set to the id number of that Server or Client.
-        self.hosts_db = {}
-
-        # This list should contain the ids of all servers that are directly connected to this server.
-        self.adjacent_server_ids = []
-
-        # This list should contain the ids of all clients that are directly connected to this server 
-        self.adjacent_user_ids = []
-        
-        # Store the content of all status messages directed to this server in this list. This is purely 
-        # for grading purposes
-        self.status_updates_log = []
-
-
-        # Do not change the contents of any variables in __init__ below this line
-        # -----------------------------------------------------------------------------
+        # Server configuration from options
         self.id = options.id                            # The numeric ID of this server
         self.server_name = options.servername           # The name of this server
         self.server_info = options.info                 # Human-readable information about this server
-
         self.port = options.port                        # The port this server listens to for new connections
-        self.connect_to_host = options.connect_to_host  # The printable name of the remote server. Don't use 
-                                                        # this when actually connecting to the server
-        self.connect_to_host_addr = '127.0.0.1'         # Use this IP address to connect to on startup.
-        self.connect_to_port = options.connect_to_port  # The port to connect to on startup. Do not connect to
-                                                        # anything if this is empty/None
+        self.connect_to_host = options.connect_to_host  # The printable name of the remote server
+        self.connect_to_host_addr = '127.0.0.1'         # Use this IP address to connect to on startup
+        self.connect_to_port = options.connect_to_port  # The port to connect to on startup
 
-        self.request_terminate = False                  # A flag used by the testing application to instruct
-                                                        # your code to terminate at the end of a test.
+        self.request_terminate = False                  # Flag used by testing application
 
-        # This dictionary contains mappings from commands to command handlers. It is used to call the 
-        # appropriate message handler in self.handle_messages(). You do not need to do anything with this in 
-        # the code you are writing for this project.
+        # Message handlers mapping
         self.message_handlers = {
-            # Message handlers
-            0x00:self.handle_server_registration_message,
-            0x01:self.handle_status_message,
-            0x80:self.handle_client_registration_message,
-            0x81:self.handle_client_chat_message,
-            0x82:self.handle_client_quit_message,
+            0x00: self.handle_server_registration_message,
+            0x01: self.handle_status_message,
+            0x80: self.handle_client_registration_message,
+            0x81: self.handle_client_chat_message,
+            0x82: self.handle_client_quit_message,
         }
 
-        self.log_file = options.log_file                # The log file output will be written to
-        self.logger = None                              # The logger initialized in self.init_logging()
-        self.init_logging()                             # Setup and begin logging functionality
+        # Logging setup
+        self.log_file = options.log_file
+        self.logger = None
+        self.init_logging()
 
 ##############################################################################################################
 
@@ -190,13 +168,15 @@ class CRCServer(object):
         self.print_info("Configuring the server socket...")
 
         # Create TCP server socket
-        server_socket = socket(AF_INET, SOCK_STREAM)
-        server_socket.bind(('', self.port))
-        server_socket.listen()
+        self.server_socket = socket(AF_INET, SOCK_STREAM)
+        self.server_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
+        self.server_socket.bind(('', self.port))
+        self.server_socket.listen()
         
         # Make socket non-blocking and register with selector
-        server_socket.setblocking(False)
-        self.sel.register(server_socket, selectors.EVENT_READ, None)  # None data indicates this is the server socket
+        self.server_socket.setblocking(False)
+        # Use None as data to identify this as the server socket
+        self.sel.register(self.server_socket, selectors.EVENT_READ, None)
 
     def connect_to_server(self):
         """ This function is responsible for connecting to a remote CRC server upon starting this server. Each
@@ -221,7 +201,7 @@ class CRCServer(object):
         """
         self.print_info("Connecting to remote server %s:%i..." % (self.connect_to_host, self.connect_to_port))
 
-        # Create TCP socket and connect
+        # Create TCP client socket and connect to remote server
         client_socket = socket(AF_INET, SOCK_STREAM)
         client_socket.connect((self.connect_to_host_addr, self.connect_to_port))
         
@@ -230,7 +210,7 @@ class CRCServer(object):
         connection_data = BaseConnectionData()
         self.sel.register(client_socket, selectors.EVENT_READ | selectors.EVENT_WRITE, connection_data)
         
-        # Create and send server registration message
+        # Send server registration message with last_hop_id=0 (initial registration)
         reg_msg = ServerRegistrationMessage.bytes(self.id, 0, self.server_name, self.server_info)
         connection_data.write_buffer += reg_msg
         
@@ -265,12 +245,12 @@ class CRCServer(object):
         self.print_info("Listening for new connections on port " + str(self.port))
         
         while not self.request_terminate:
-            # Get list of ready sockets with timeout
+            # Get ready sockets with timeout to allow termination
             events = self.sel.select(timeout=0.1)
             
             for key, mask in events:
                 if key.data is None:
-                    # This is the server socket
+                    # This is the server socket (listening socket)
                     self.accept_new_connection(key)
                 else:
                     # This is a client/server connection socket
@@ -299,22 +279,17 @@ class CRCServer(object):
         self.print_info("Cleaning up the server")
         
         # Get all registered sockets and close them
-        for fd in list(self.sel.get_map()):
+        for key in list(self.sel.get_map().values()):
             try:
-                # Get the socket from the selector
-                key = self.sel.get_key(fd)
-                # Close the socket
-                key.fileobj.close()
-                # Unregister from selector
-                self.sel.unregister(key.fileobj)
+                # Close the socket if it has a close method
+                if hasattr(key.fileobj, 'close'):
+                    key.fileobj.close()
             except Exception:
                 # Skip any sockets that have already been closed
                 continue
             
         # Close the selector
         self.sel.close()
-
-
 
     def accept_new_connection(self, io_device):
         """ This function is responsible for handling new connection requests from other servers and from 
@@ -332,7 +307,7 @@ class CRCServer(object):
             handling the registration message.
 
         Args:
-            io_device (...): 
+            io_device (SelectorKey): 
         Returns:
             None        
         """
@@ -340,12 +315,10 @@ class CRCServer(object):
         conn, addr = io_device.fileobj.accept()
         conn.setblocking(False)
         
-        # Register with selector using BaseConnectionData
+        # Register with selector using BaseConnectionData (we don't know if it's server or client yet)
         connection_data = BaseConnectionData()
         self.sel.register(conn, selectors.EVENT_READ | selectors.EVENT_WRITE, connection_data)
 
-
-   
     def handle_io_device_events(self, io_device, event_mask):
         """ This function is responsible for handling READ and WRITE events for a given IO device. Incomming  
         messages will be read and passed to the appropriate message handler here and the write buffer  
@@ -365,8 +338,8 @@ class CRCServer(object):
             don't want to send any duplicate messages
 
         Args:
-            io_device (...):
-            event_mask (...): 
+            io_device (SelectorKey):
+            event_mask (int): 
         Returns:
             None        
         """
@@ -378,13 +351,15 @@ class CRCServer(object):
                     # We received data, handle it
                     self.handle_messages(io_device, recv_data)
                 else:
-                    # No data means connection was closed
+                    # No data means connection was closed by peer
                     self.sel.unregister(io_device.fileobj)
                     io_device.fileobj.close()
-            except ConnectionError:
-                # Handle connection errors
+                    return
+            except ConnectionResetError:
+                # Handle connection reset
                 self.sel.unregister(io_device.fileobj)
                 io_device.fileobj.close()
+                return
                 
         # Handle WRITE events
         if event_mask & selectors.EVENT_WRITE:
@@ -394,13 +369,12 @@ class CRCServer(object):
                     sent = io_device.fileobj.send(io_device.data.write_buffer)
                     # Clear the sent portion of the write buffer
                     io_device.data.write_buffer = io_device.data.write_buffer[sent:]
-                except ConnectionError:
-                    # Handle connection errors
+                except ConnectionResetError:
+                    # Handle connection reset
                     self.sel.unregister(io_device.fileobj)
                     io_device.fileobj.close()
+                    return
 
-
-    
     def handle_messages(self, io_device, recv_data):
         """ This function is responsible for parsing the received bytes into separate messages and then 
         passing each of the received messages to the appropriate message handler. Message parsing is offloaded
@@ -411,8 +385,8 @@ class CRCServer(object):
         You do not need to make any changes to this method.        
 
         Args:
-            io_device (...):
-            recv_data (...): 
+            io_device (SelectorKey):
+            recv_data (bytes): 
         Returns:
             None        
         """
@@ -424,7 +398,7 @@ class CRCServer(object):
                 self.print_info("Received msg from Host ID #%s \"%s\"" % (message.source_id, message.bytes))
                 self.message_handlers[message.message_type](io_device, message)
             else:
-                raise Exception("Unrecognized command: " + message)
+                raise Exception("Unrecognized command: " + str(message))
 
 ##############################################################################################################
 
@@ -449,13 +423,23 @@ class CRCServer(object):
             # Get the ID of the first server we need to send through
             first_link_id = dest_connection.first_link_id
             
-            # Get that server's connection data
-            first_link_connection = self.hosts_db[first_link_id]
-            
-            # Add our message to that server's write buffer
-            first_link_connection.write_buffer += message
-
-
+            # If first_link_id is our ID, this is an adjacent host - send directly to it
+            if first_link_id == self.id:
+                # Find the socket for the destination host itself
+                for key in self.sel.get_map().values():
+                    if (key.data and hasattr(key.data, 'id') and 
+                        key.data.id == destination_id):
+                        # Found the socket, add message to its write buffer
+                        key.data.write_buffer += message
+                        break
+            else:
+                # This is a non-adjacent host - route through the first link
+                for key in self.sel.get_map().values():
+                    if (key.data and hasattr(key.data, 'id') and 
+                        key.data.id == first_link_id):
+                        # Found the socket, add message to its write buffer
+                        key.data.write_buffer += message
+                        break
 
     def broadcast_message_to_servers(self, message, ignore_host_id=None):
         """ This is a helper function meant to encapsulate the code needed to broadcast a message to the 
@@ -483,11 +467,12 @@ class CRCServer(object):
         for server_id in self.adjacent_server_ids:
             # Skip the server we want to ignore (if any)
             if server_id != ignore_host_id:
-                # Get the server's connection data and add message to its write buffer
-                server_connection = self.hosts_db[server_id]
-                server_connection.write_buffer += message
-
-
+                # Find the socket for this server and add message to write buffer
+                for key in self.sel.get_map().values():
+                    if (key.data and hasattr(key.data, 'id') and 
+                        key.data.id == server_id):
+                        key.data.write_buffer += message
+                        break
 
     def broadcast_message_to_adjacent_clients(self, message, ignore_host_id=None):
         """ This is a helper function meant to encapsulate the code needed to broadcast a message to all 
@@ -508,11 +493,12 @@ class CRCServer(object):
         """
         for client_id in self.adjacent_user_ids:
             if client_id != ignore_host_id:
-                client_connection = self.hosts_db[client_id]
-                client_connection.write_buffer += message
-
-
-
+                # Find the socket for this client and add message to write buffer
+                for key in self.sel.get_map().values():
+                    if (key.data and hasattr(key.data, 'id') and 
+                        key.data.id == client_id):
+                        key.data.write_buffer += message
+                        break
 
     def send_message_to_unknown_io_device(self, io_device, message):
         """ The ID of a machine becomes known once it successfully registers with the network. In the event 
@@ -581,7 +567,7 @@ class CRCServer(object):
         if message.source_id in self.hosts_db:
             error_msg = StatusUpdateMessage.bytes(
                 self.id, 0, 0x02,
-                f"A machine has already registered with ID {message.source_id}"
+                f"Someone has already registered with ID {message.source_id}"
             )
             self.send_message_to_unknown_io_device(io_device, error_msg)
             return
@@ -593,7 +579,7 @@ class CRCServer(object):
             message.server_info
         )
 
-        # Determine if this is an adjacent server by checking if last_hop_id is 0
+        # Determine if this is an adjacent server
         # If last_hop_id is 0, this server connected directly to us
         is_adjacent = (message.last_hop_id == 0)
         
@@ -607,7 +593,7 @@ class CRCServer(object):
                            selectors.EVENT_READ | selectors.EVENT_WRITE, 
                            new_server_connection)
         else:
-            # For non-adjacent servers, we need to route through the last_hop_id
+            # For non-adjacent servers, we route through the last_hop_id
             new_server_connection.first_link_id = message.last_hop_id
 
         # Add the new server to our database
@@ -615,7 +601,7 @@ class CRCServer(object):
 
         # If this is an adjacent server, send it information about all existing hosts
         if is_adjacent:
-            # First, send our own registration
+            # First, send our own registration to the new server
             reg_msg = ServerRegistrationMessage.bytes(
                 self.id,
                 0,  # we are the source, so last_hop is 0
@@ -706,7 +692,7 @@ class CRCServer(object):
                 self.id,  # from this server
                 0,        # to unknown client (use 0)
                 0x02,     # duplicate ID error code
-                f"A machine has already registered with ID {message.source_id}"
+                f"Someone has already registered with ID {message.source_id}"
             )
             self.send_message_to_unknown_io_device(io_device, error_msg)
             return
@@ -907,8 +893,6 @@ class CRCServer(object):
         print("[%s] \t%s" % (self.server_name,msg))
         if self.logger:
             self.logger.info(msg)
-
-
 
     # This function takes two lists and returns the union of the lists. If an object appears in both lists,
     # it will only be in the returned union once.

@@ -23,10 +23,10 @@ b'\x00\x00\x00\x01\xc8\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
 *CMD.........	Waiting... 0.25
 [minastirith] 	Configuring the server socket...
 [minastirith] 	Connecting to remote server theshire:31201...
+[theshire] 	Accepted a connection from another server
 [minastirith] 	Connected to another server
 [minastirith] 	Connected to another server
 [minastirith] 	Listening for new connections on port 31203
-[theshire] 	Accepted a connection from another server
 [theshire] 	Received b'\x00\x00\x00\x03\x15\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'
 b'\x00\x00\x00\x03\x15\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'
 *CMD.........	Starting --id 987 --servername barad-dur --port 31204 --info "the Dark Tower" --log-file barad-dur.log --connect_to_host minastiri --connect_to_port 31203

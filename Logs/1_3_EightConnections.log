@@ -12,8 +12,8 @@ Beginning test 1_3_EightConnections
 *CMD.........	Waiting... 0.25
 [rivendale] 	Configuring the server socket...
 [rivendale] 	Connecting to remote server theshire:31301...
-[theshire] 	Accepted a connection from another server
 [rivendale] 	Connected to another server
+[theshire] 	Accepted a connection from another server
 [rivendale] 	Connected to another server
 [rivendale] 	Listening for new connections on port 31302
 [theshire] 	Received b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x10rivendale"Elrond\'s House"'
@@ -78,8 +78,8 @@ b'\x00\x00\x00\x00\x07\x00\x00\x00\x00\t\x00\x16osgiliath"Citadel of the Stars"'
 *CMD.........	Waiting... 0.5
 [barad-dur] 	Configuring the server socket...
 [barad-dur] 	Connecting to remote server minastiri:31306...
-[barad-dur] 	Connected to another server
 [minastirith] 	Accepted a connection from another server
+[barad-dur] 	Connected to another server
 [barad-dur] 	Connected to another server
 [barad-dur] 	Listening for new connections on port 31308
 [minastirith] 	Received b'\x00\x00\x00\x00\x08\x00\x00\x00\x00\t\x00\x10barad-dur"The Dark Tower"'

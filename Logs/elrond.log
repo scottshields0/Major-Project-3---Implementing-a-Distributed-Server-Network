@@ -1,58 +1,682 @@
-2025-06-19 22:25:50,348 - IRCServer[24120] - INFO - Launching client elrond...
-2025-06-19 22:25:50,357 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00g\x00\x00\x00\x00\x06\x00\x0belrond"Test info"'
-2025-06-19 22:25:51,360 - IRCServer[24120] - INFO - Launching client bilbobaggins...
-2025-06-19 22:25:51,364 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'
-2025-06-19 22:25:52,371 - IRCServer[24120] - INFO - Launching server lothlorien...
-2025-06-19 22:25:52,374 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:25:52,378 - IRCServer[24120] - INFO - Server has disconnected!
-2025-06-19 22:25:52,379 - IRCServer[24120] - INFO - Server has disconnected!
-2025-06-19 22:25:53,377 - IRCServer[24120] - INFO - Launching server moria...
-2025-06-19 22:25:53,380 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:25:54,381 - IRCServer[24120] - INFO - Launching server edoras...
-2025-06-19 22:25:54,383 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:25:55,411 - IRCServer[24120] - INFO - Launching server minastirith...
-2025-06-19 22:25:55,422 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:25:57,415 - IRCServer[24120] - INFO - Launching client peregrin...
-2025-06-19 22:25:57,420 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00i\x00\x00\x00\x00\x08\x00\x0bperegrin"Test info"'
-2025-06-19 22:25:58,421 - IRCServer[24120] - INFO - Launching server mirkwood...
-2025-06-19 22:25:58,423 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:25:58,425 - IRCServer[24120] - INFO - Connecting to remote server rivendale:33402...
-2025-06-19 22:25:58,426 - IRCServer[24120] - INFO - Connected to another server
-2025-06-19 22:25:58,427 - IRCServer[24120] - INFO - Listening for new connections on port 33408
-2025-06-19 22:25:59,424 - IRCServer[24120] - INFO - Launching client meriadoc...
-2025-06-19 22:25:59,426 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00j\x00\x00\x00\x00\x08\x00\x0bmeriadoc"Test info"'
-2025-06-19 22:26:00,426 - IRCServer[24120] - INFO - Launching server isengard...
-2025-06-19 22:26:00,428 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:26:00,429 - IRCServer[24120] - INFO - Connecting to remote server edoras:33406...
-2025-06-19 22:26:00,430 - IRCServer[24120] - INFO - Connected to another server
-2025-06-19 22:26:00,432 - IRCServer[24120] - INFO - Listening for new connections on port 33409
-2025-06-19 22:26:01,447 - IRCServer[24120] - INFO - Launching server osgiliath...
-2025-06-19 22:26:01,453 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:26:01,457 - IRCServer[24120] - INFO - Connecting to remote server minastirith:33407...
-2025-06-19 22:26:01,462 - IRCServer[24120] - INFO - Connected to another server
-2025-06-19 22:26:01,468 - IRCServer[24120] - INFO - Listening for new connections on port 33410
-2025-06-19 22:26:02,451 - IRCServer[24120] - INFO - Launching server barad-dur...
-2025-06-19 22:26:02,457 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:26:04,455 - IRCServer[24120] - INFO - Launching client balin...
-2025-06-19 22:26:04,463 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'
-2025-06-19 22:26:05,459 - IRCServer[24120] - INFO - Launching client sauron...
-2025-06-19 22:26:05,463 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'
-2025-06-19 22:26:07,961 - IRCServer[24120] - INFO - Cleaning up the server
-2025-06-19 22:26:07,964 - IRCServer[24120] - INFO - Cleaning up the server
-2025-06-19 22:26:07,965 - IRCServer[24120] - INFO - Cleaning up the server
-- Connected to another server
-2025-06-19 22:26:00,432 - IRCServer[24120] - INFO - Listening for new connections on port 33409
-2025-06-19 22:26:01,447 - IRCServer[24120] - INFO - Launching server osgiliath...
-2025-06-19 22:26:01,453 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:26:01,457 - IRCServer[24120] - INFO - Connecting to remote server minastirith:33407...
-2025-06-19 22:26:01,462 - IRCServer[24120] - INFO - Connected to another server
-2025-06-19 22:26:01,468 - IRCServer[24120] - INFO - Listening for new connections on port 33410
-2025-06-19 22:26:02,451 - IRCServer[24120] - INFO - Launching server barad-dur...
-2025-06-19 22:26:02,457 - IRCServer[24120] - INFO - Configuring the server socket...
-2025-06-19 22:26:04,455 - IRCServer[24120] - INFO - Launching client balin...
-2025-06-19 22:26:04,463 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'
-2025-06-19 22:26:05,459 - IRCServer[24120] - INFO - Launching client sauron...
-2025-06-19 22:26:05,463 - IRCServer[24120] - INFO - Sending message to b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'
-2025-06-19 22:26:07,961 - IRCServer[24120] - INFO - Cleaning up the server
-2025-06-19 22:26:07,964 - IRCServer[24120] - INFO - Cleaning up the server
-2025-06-19 22:26:07,965 - IRCServer[24120] - INFO - Cleaning up the server
+2025-06-19 23:30:51,729 - IRCServer[27984] - INFO - Launching client elrond...
+2025-06-19 23:30:51,735 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00g\x00\x00\x00\x00\x06\x00\x0belrond"Test info"'
+2025-06-19 23:30:51,742 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x00\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:51,746 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:51,747 - IRCServer[27984] - INFO - Received message from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00g\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network elrond'"
+2025-06-19 23:30:51,752 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:51,753 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:51,753 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:51,754 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:51,763 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:52,732 - IRCServer[27984] - INFO - Launching client bilbobaggins...
+2025-06-19 23:30:52,737 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'
+2025-06-19 23:30:52,741 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:52,746 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x03\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:52,746 - IRCServer[27984] - INFO - Received message from Host ID #3 "b'\x01\x00\x00\x00\x03\x00\x00\x00h\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network bilbobaggins'"
+2025-06-19 23:30:52,750 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:52,750 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:52,752 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:52,755 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:52,763 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:52,764 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:52,772 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x03\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:53,735 - IRCServer[27984] - INFO - Launching server lothlorien...
+2025-06-19 23:30:53,738 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:30:53,742 - IRCServer[27984] - INFO - Connecting to remote server rivendale:33402...
+2025-06-19 23:30:53,746 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:30:53,750 - IRCServer[27984] - INFO - Listening for new connections on port 33404
+2025-06-19 23:30:53,758 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x00\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:53,766 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x02\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:53,767 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:30:53,775 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x01\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:53,776 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x02\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:53,776 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x01\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:53,780 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:53,784 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:53,789 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x03\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:53,796 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x02\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:53,797 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:53,800 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:53,802 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:53,802 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:53,823 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:53,835 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:53,842 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x00\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:53,853 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:53,861 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x04\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:53,867 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:53,872 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x04\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:53,877 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:53,882 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:53,886 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:53,893 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:54,740 - IRCServer[27984] - INFO - Launching server moria...
+2025-06-19 23:30:54,747 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:30:54,756 - IRCServer[27984] - INFO - Connecting to remote server rivendale:33402...
+2025-06-19 23:30:54,763 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:30:54,768 - IRCServer[27984] - INFO - Listening for new connections on port 33405
+2025-06-19 23:30:54,776 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x00\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,785 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x02\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,786 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:30:54,787 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x02\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,795 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x02\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:54,796 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x04\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,799 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x01\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,801 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:54,803 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,803 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x03\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,809 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x02\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:54,813 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,814 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x01\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,814 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,817 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:54,826 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,826 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:54,826 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,841 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:54,843 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,845 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x02\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:54,870 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x00\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:54,881 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,887 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x05\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:54,894 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:54,901 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x05\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:54,905 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:54,909 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x05\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:54,915 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:54,924 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:54,935 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:54,936 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:54,937 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:30:55,749 - IRCServer[27984] - INFO - Launching server edoras...
+2025-06-19 23:30:55,763 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:30:55,777 - IRCServer[27984] - INFO - Connecting to remote server lothlorien:33404...
+2025-06-19 23:30:55,792 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:30:55,796 - IRCServer[27984] - INFO - Listening for new connections on port 33406
+2025-06-19 23:30:55,811 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x00\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,825 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x04\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,826 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x00\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:55,835 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x04\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:30:55,835 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x02\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,835 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x02\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,835 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x02\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,844 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x04\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:55,845 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,846 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x05\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,847 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x01\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,850 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x04\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:55,855 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,857 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x04\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:55,858 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x03\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,862 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,863 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,866 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x04\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:55,870 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,874 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x04\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:55,876 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x01\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,884 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,884 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x04\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:55,886 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,900 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x04\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:55,902 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,906 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x00\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:55,913 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:55,927 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x06\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:30:55,944 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:30:55,957 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x06\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:55,974 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:55,983 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x06\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:55,997 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:56,014 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x06\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:56,023 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:56,036 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:56,039 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:30:56,058 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:56,070 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:56,084 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:56,757 - IRCServer[27984] - INFO - Launching server minastirith...
+2025-06-19 23:30:56,833 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:30:56,852 - IRCServer[27984] - INFO - Connecting to remote server lothlorien:33404...
+2025-06-19 23:30:56,860 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:30:56,886 - IRCServer[27984] - INFO - Listening for new connections on port 33407
+2025-06-19 23:30:56,904 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,920 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x04\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,920 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x04\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,923 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x00\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:30:56,942 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x02\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,944 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x02\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,945 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x02\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,948 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x04\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:30:56,955 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:56,965 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x05\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,969 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x01\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,970 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x04\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:56,978 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x06\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,987 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:56,991 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x03\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:56,993 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x04\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:56,997 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,004 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,005 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,007 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,013 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x04\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:57,014 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,022 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x01\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:57,027 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,033 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x04\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:57,040 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,045 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x04\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:57,047 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x04\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:57,048 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,050 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x04\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:57,053 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x04\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:57,056 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:30:57,064 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,070 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x07\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:30:57,078 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:30:57,080 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x07\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:57,083 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:57,093 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x07\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:57,098 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:57,116 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x07\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:30:57,120 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:57,125 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x07\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:30:57,134 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:57,140 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:30:57,150 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:30:57,158 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:30:57,160 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:30:57,164 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:30:57,165 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:30:58,763 - IRCServer[27984] - INFO - Launching client peregrin...
+2025-06-19 23:30:58,774 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00i\x00\x00\x00\x00\x08\x00\x0bperegrin"Test info"'
+2025-06-19 23:30:58,785 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x00\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,793 - IRCServer[27984] - INFO - Received message from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00i\x00\x00\x00\x00\x002Welcome to the Clemson Relay Chat network peregrin'"
+2025-06-19 23:30:58,793 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x07\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,805 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x07\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:58,811 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x04\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,812 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x04\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,814 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x07\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:58,819 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x02\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,823 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x02\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,823 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x02\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,844 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x07\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:58,858 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x01\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,860 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x01\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,861 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x01\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:58,874 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x07\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:30:58,900 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x03\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:30:59,768 - IRCServer[27984] - INFO - Launching server mirkwood...
+2025-06-19 23:30:59,801 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:30:59,807 - IRCServer[27984] - INFO - Connecting to remote server rivendale:33402...
+2025-06-19 23:30:59,824 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:30:59,841 - IRCServer[27984] - INFO - Listening for new connections on port 33408
+2025-06-19 23:30:59,867 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x00\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,881 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x02\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,881 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:30:59,882 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x02\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,883 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x02\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,903 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x04\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,919 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x04\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,904 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x04\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,924 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x02\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:30:59,924 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x07\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,925 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x01\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,934 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:30:59,946 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:30:59,949 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:30:59,949 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x03\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,950 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x05\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,959 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x02\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:30:59,966 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x06\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,966 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:30:59,967 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:30:59,967 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:30:59,967 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:30:59,984 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:30:59,985 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:30:59,989 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:30:59,989 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x01\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:30:59,989 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:00,002 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:00,002 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:00,003 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:00,004 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:00,031 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x02\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:00,033 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:00,054 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x02\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:00,070 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x02\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:31:00,088 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x02\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:31:00,102 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x02\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:00,137 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x00\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:31:00,148 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:00,163 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x08\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:31:00,177 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:00,190 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x08\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:31:00,199 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:00,210 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x08\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:00,224 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:00,239 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x08\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:00,245 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:00,260 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x08\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:31:00,283 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:31:00,311 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x08\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:31:00,324 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:31:00,333 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:00,344 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:00,353 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:00,373 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:00,381 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:00,388 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:31:00,399 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:31:00,773 - IRCServer[27984] - INFO - Launching client meriadoc...
+2025-06-19 23:31:00,779 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00j\x00\x00\x00\x00\x08\x00\x0bmeriadoc"Test info"'
+2025-06-19 23:31:00,782 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x00\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,791 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x06\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,792 - IRCServer[27984] - INFO - Received message from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00j\x00\x00\x00\x00\x002Welcome to the Clemson Relay Chat network meriadoc'"
+2025-06-19 23:31:00,803 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x06\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:00,805 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x04\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,806 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x04\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,814 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x06\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:00,820 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x02\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,821 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x02\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,822 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x02\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,823 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x02\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,824 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x07\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,827 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x06\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:00,831 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x01\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,831 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x01\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,833 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x01\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,845 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x06\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:00,847 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x03\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:00,871 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x06\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:01,779 - IRCServer[27984] - INFO - Launching server isengard...
+2025-06-19 23:31:01,787 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:31:01,795 - IRCServer[27984] - INFO - Connecting to remote server edoras:33406...
+2025-06-19 23:31:01,798 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:31:01,802 - IRCServer[27984] - INFO - Listening for new connections on port 33409
+2025-06-19 23:31:01,810 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x00\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,821 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x06\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,823 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x00\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:31:01,834 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x04\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,834 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x04\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,838 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x06\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:01,839 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x04\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,839 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x02\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,840 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x02\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,840 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x02\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,842 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x02\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,842 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,844 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x06\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:31:01,847 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,851 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x01\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,853 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x01\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,883 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x06\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:31:01,886 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,887 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,889 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x03\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,889 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x06\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:01,902 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x07\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,903 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x08\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,906 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,909 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x06\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:31:01,920 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,924 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,927 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x06\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:01,928 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,928 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,930 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x05\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:01,930 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,931 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,936 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x06\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:01,951 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,960 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x06\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:01,961 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,961 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:01,970 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x06\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:01,983 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x06\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:31:01,992 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x06\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:02,000 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x06\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:31:02,001 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x06\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:02,005 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x00\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:02,009 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:02,011 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\t\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:02,014 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:02,017 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\t\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:31:02,020 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:31:02,028 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\t\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:31:02,033 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:02,034 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\t\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:31:02,036 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:02,044 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\t\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:02,058 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:02,068 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\t\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:31:02,083 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:31:02,098 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\t\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:31:02,103 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:02,117 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:02,129 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:02,130 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:31:02,132 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:02,133 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:02,136 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:02,156 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 7'"
+2025-06-19 23:31:02,165 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:02,784 - IRCServer[27984] - INFO - Launching server osgiliath...
+2025-06-19 23:31:02,800 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:31:02,813 - IRCServer[27984] - INFO - Connecting to remote server minastirith:33407...
+2025-06-19 23:31:02,824 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:31:02,826 - IRCServer[27984] - INFO - Listening for new connections on port 33410
+2025-06-19 23:31:02,832 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x00\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,842 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:31:02,842 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x07\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,848 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x07\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:02,853 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x04\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,855 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x04\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,856 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x04\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,859 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x07\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:31:02,866 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x02\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,869 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x07\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:31:02,869 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x02\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,869 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,870 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x02\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,871 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x06\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,873 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x02\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,879 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,880 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x07\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:02,883 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x01\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,885 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x01\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,895 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\t\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,896 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x06\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,901 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x07\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:31:02,909 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,915 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x03\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,923 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,924 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,925 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x07\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:02,928 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x08\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,930 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,933 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,935 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,937 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,938 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x07\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:02,944 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,945 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,946 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,955 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x07\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:02,961 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x05\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:02,964 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,965 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x07\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:02,967 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,975 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x07\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:31:02,977 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,977 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:02,984 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x07\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:02,994 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x07\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:31:03,018 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x07\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:03,028 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x07\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:03,033 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x00\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:03,043 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:03,053 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\n\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:03,068 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:03,069 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\n\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:31:03,070 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:31:03,071 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\n\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:31:03,071 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:03,072 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\n\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:31:03,073 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:03,074 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\n\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:03,075 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:03,076 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\n\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:31:03,076 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:31:03,077 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\n\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:31:03,078 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:03,079 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\n\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:03,079 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:03,086 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:03,089 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:03,091 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:31:03,094 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:03,096 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:03,097 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:03,170 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:31:03,189 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:03,205 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:03,793 - IRCServer[27984] - INFO - Launching server barad-dur...
+2025-06-19 23:31:03,803 - IRCServer[27984] - INFO - Configuring the server socket...
+2025-06-19 23:31:03,818 - IRCServer[27984] - INFO - Connecting to remote server minastirith:33407...
+2025-06-19 23:31:03,849 - IRCServer[27984] - INFO - Connected to another server
+2025-06-19 23:31:03,856 - IRCServer[27984] - INFO - Listening for new connections on port 33411
+2025-06-19 23:31:03,865 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x00\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,877 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x00\x00\x00\x00\x07\x00\x00\x00\x00\x0b\x00\x10minastirith"Tower of Guard"'"
+2025-06-19 23:31:03,878 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x07\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,879 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x07\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,880 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x07\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:03,892 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x04\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,893 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x04\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,894 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x04\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,896 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x07\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:31:03,899 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x06\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,900 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x06\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,909 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,912 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x07\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:31:03,913 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x02\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,915 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x02\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,918 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\t\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,924 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x02\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,925 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,926 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\n\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,933 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x08\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,935 - IRCServer[27984] - INFO - Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x07\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:03,938 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,945 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,946 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x01\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,946 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,952 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,953 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x07\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:31:03,958 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x03\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,961 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x02\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,963 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x01\x00\x00\x00\x06\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,964 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,964 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,965 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x05\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:03,965 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,966 - IRCServer[27984] - INFO - Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x07\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:03,966 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,970 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,982 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:03,983 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:04,009 - IRCServer[27984] - INFO - Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x07\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:04,010 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x01\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:04,011 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:04,019 - IRCServer[27984] - INFO - Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x07\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:04,019 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:04,035 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x07\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:04,039 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x01\x00\x00\x00\x04\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:04,040 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:04,048 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x07\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:31:04,058 - IRCServer[27984] - INFO - Received msg from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x07\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:04,066 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x07\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:31:04,081 - IRCServer[27984] - INFO - Received msg from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x07\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:04,092 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x07\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:04,103 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x07\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:04,112 - IRCServer[27984] - INFO - Received msg from Host ID #11 "b'\x00\x00\x00\x00\x0b\x00\x00\x00\x00\t\x00\x10barad-dur"The Dark Tower"'"
+2025-06-19 23:31:04,117 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:04,128 - IRCServer[27984] - INFO - Received msg from Host ID #4 "b'\x00\x00\x00\x00\x04\x00\x00\x00\x0b\n\x00\x11lothlorien"The Golden Wood"'"
+2025-06-19 23:31:04,141 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:04,150 - IRCServer[27984] - INFO - Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x0b\t\x00\x0frivendale"Elronds House"'"
+2025-06-19 23:31:04,159 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:31:04,165 - IRCServer[27984] - INFO - Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x08\x00\x15theshire"Home of the Hobbits"'"
+2025-06-19 23:31:04,175 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:04,178 - IRCServer[27984] - INFO - Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x0b\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
+2025-06-19 23:31:04,183 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:04,192 - IRCServer[27984] - INFO - Received msg from Host ID #5 "b'\x00\x00\x00\x00\x05\x00\x00\x00\x0b\x05\x00\x0fmoria"The Black Pit"'"
+2025-06-19 23:31:04,208 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:04,224 - IRCServer[27984] - INFO - Received msg from Host ID #6 "b'\x00\x00\x00\x00\x06\x00\x00\x00\x0b\x06\x00%edoras"Home of the Golden Hall of Meduseld"'"
+2025-06-19 23:31:04,233 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:31:04,241 - IRCServer[27984] - INFO - Received msg from Host ID #8 "b'\x00\x00\x00\x00\x08\x00\x00\x00\x0b\x08\x00\x15mirkwood"Wood of Greenleaves"'"
+2025-06-19 23:31:04,264 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:04,267 - IRCServer[27984] - INFO - Received msg from Host ID #9 "b'\x00\x00\x00\x00\t\x00\x00\x00\x0b\x08\x00\x1disengard"Angrenost, The Iron Fortres"'"
+2025-06-19 23:31:04,272 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:04,277 - IRCServer[27984] - INFO - Received msg from Host ID #10 "b'\x00\x00\x00\x00\n\x00\x00\x00\x0b\t\x00\x16osgiliath"Citadel of the Stars"'"
+2025-06-19 23:31:04,286 - IRCServer[27984] - INFO - Sending message to an unknown IO device "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:04,301 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 11'"
+2025-06-19 23:31:04,315 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 4'"
+2025-06-19 23:31:04,327 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+2025-06-19 23:31:04,337 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 1'"
+2025-06-19 23:31:04,347 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+2025-06-19 23:31:04,354 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 5'"
+2025-06-19 23:31:04,362 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:31:04,373 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:04,382 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:04,384 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:05,802 - IRCServer[27984] - INFO - Launching client balin...
+2025-06-19 23:31:05,825 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'
+2025-06-19 23:31:05,845 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,880 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x05\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,881 - IRCServer[27984] - INFO - Received message from Host ID #5 "b'\x01\x00\x00\x00\x05\x00\x00\x00k\x00\x00\x00\x00\x00/Welcome to the Clemson Relay Chat network balin'"
+2025-06-19 23:31:05,892 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,892 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,893 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,893 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x05\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:05,894 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,914 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,914 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,921 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x05\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:05,923 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,924 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,925 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,927 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,928 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,929 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,930 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x05\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:05,931 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,932 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,934 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x03\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,946 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x05\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:05,953 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x05\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:05,955 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x05\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:06,813 - IRCServer[27984] - INFO - Launching client sauron...
+2025-06-19 23:31:06,845 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'
+2025-06-19 23:31:06,867 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,890 - IRCServer[27984] - INFO - Received message from Host ID #11 "b'\x01\x00\x00\x00\x0b\x00\x00\x00l\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network sauron'"
+2025-06-19 23:31:06,891 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x0b\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,909 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x0b\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:06,910 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,913 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,915 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,932 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x0b\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:06,944 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,944 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,949 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x0b\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:06,964 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,965 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,967 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,968 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,970 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,973 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,975 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x0b\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:06,997 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,998 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,999 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:07,001 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x05\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:07,009 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x0b\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:07,031 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x03\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:07,038 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x0b\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:07,062 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x0b\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:09,316 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,344 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,346 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,347 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,363 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,365 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,370 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,373 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,384 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,393 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,393 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,405 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,406 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,412 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,470 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,520 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,631 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,634 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,636 - IRCServer[27984] - INFO - Server has disconnected!
+x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 6'"
+2025-06-19 23:31:04,373 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 8'"
+2025-06-19 23:31:04,382 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 9'"
+2025-06-19 23:31:04,384 - IRCServer[27984] - INFO - Received msg from Host ID #7 "b'\x01\x00\x00\x00\x07\x00\x00\x00\x00\x00\x02\x00\x00\x00)Someone has already registered with ID 10'"
+2025-06-19 23:31:05,802 - IRCServer[27984] - INFO - Launching client balin...
+2025-06-19 23:31:05,825 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'
+2025-06-19 23:31:05,845 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x00\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,880 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x05\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,881 - IRCServer[27984] - INFO - Received message from Host ID #5 "b'\x01\x00\x00\x00\x05\x00\x00\x00k\x00\x00\x00\x00\x00/Welcome to the Clemson Relay Chat network balin'"
+2025-06-19 23:31:05,892 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,892 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,893 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,893 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x05\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:05,894 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x02\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,914 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,914 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x04\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,921 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x05\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:05,923 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,924 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,925 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x01\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,927 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,928 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x06\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,929 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,930 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x05\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:05,931 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,932 - IRCServer[27984] - INFO - Received msg from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x07\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,934 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x03\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:05,946 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x05\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:05,953 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x05\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:05,955 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x05\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:06,813 - IRCServer[27984] - INFO - Launching client sauron...
+2025-06-19 23:31:06,845 - IRCServer[27984] - INFO - Sending message to b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'
+2025-06-19 23:31:06,867 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x00\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,890 - IRCServer[27984] - INFO - Received message from Host ID #11 "b'\x01\x00\x00\x00\x0b\x00\x00\x00l\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network sauron'"
+2025-06-19 23:31:06,891 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x0b\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,909 - IRCServer[27984] - INFO - Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x0b\x0c\x00\x0bfrodobaggins"Test info"'"
+2025-06-19 23:31:06,910 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,913 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,915 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x07\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,932 - IRCServer[27984] - INFO - Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x0b\t\x00\x0bsamgamgee"Test info"'"
+2025-06-19 23:31:06,944 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,944 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x04\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,949 - IRCServer[27984] - INFO - Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x0b\x06\x00\x0belrond"Test info"'"
+2025-06-19 23:31:06,964 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,965 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,967 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,968 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x02\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,970 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,973 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x06\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,975 - IRCServer[27984] - INFO - Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x0b\x0c\x00\x0bbilbobaggins"Test info"'"
+2025-06-19 23:31:06,997 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,998 - IRCServer[27984] - INFO - Received msg from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:06,999 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x01\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:07,001 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x05\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:07,009 - IRCServer[27984] - INFO - Received message from Host ID #105 "b'\x80\x00\x00\x00i\x00\x00\x00\x0b\x08\x00\x0bperegrin"Test info"'"
+2025-06-19 23:31:07,031 - IRCServer[27984] - INFO - Received message from Host ID #108 "b'\x80\x00\x00\x00l\x00\x00\x00\x03\x06\x00\x0bsauron"Test info"'"
+2025-06-19 23:31:07,038 - IRCServer[27984] - INFO - Received message from Host ID #106 "b'\x80\x00\x00\x00j\x00\x00\x00\x0b\x08\x00\x0bmeriadoc"Test info"'"
+2025-06-19 23:31:07,062 - IRCServer[27984] - INFO - Received message from Host ID #107 "b'\x80\x00\x00\x00k\x00\x00\x00\x0b\x05\x00\x0bbalin"Test info"'"
+2025-06-19 23:31:09,316 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,344 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,346 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,347 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,363 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,365 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,370 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,373 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,384 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,393 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,393 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,405 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,406 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,412 - IRCServer[27984] - INFO - Server has disconnected!
+2025-06-19 23:31:09,470 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,520 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,631 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,634 - IRCServer[27984] - INFO - Cleaning up the server
+2025-06-19 23:31:09,636 - IRCServer[27984] - INFO - Server has disconnected!
