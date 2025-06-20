@@ -17,8 +17,8 @@ Beginning test 5_2_DuplicateID_Server
 [theshire] 	Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
 [rivendale] 	Received msg from Host ID #1 "b'\x00\x00\x00\x00\x01\x00\x00\x00\x00\x08\x00\x15theshire"Home of the Hobbits"'"
 [theshire] 	Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0frivendale"Elronds House"'"
-[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
-[rivendale] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
+[rivendale] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
 *CMD.........	Starting --id 101 --serverhost theshire --serverport 35201 --username frodobaggins --info "Test info" --log-file frodobaggins.log
 [frodobaggins] 	Launching client frodobaggins...
 *CMD.........	Waiting... 0.25
@@ -39,14 +39,14 @@ Beginning test 5_2_DuplicateID_Server
 [grey_havens] 	Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x01\t\x00\x0frivendale"Elronds House"'"
 [theshire] 	Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x02\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
 [grey_havens] 	Received msg from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
-[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
-[rivendale] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 3'"
+[rivendale] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 3'"
 [theshire] 	Received msg from Host ID #3 "b'\x00\x00\x00\x00\x03\x00\x00\x00\x00\x0b\x00\x1cgrey_havens"Gates to the Blessed Realm"'"
-[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
+[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 3'"
 [theshire] 	Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x03\t\x00\x0frivendale"Elronds House"'"
-[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
-[grey_havens] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 3'"
-[grey_havens] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
+[grey_havens] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 3'"
+[grey_havens] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
 *CMD.........	Starting --id 2 --servername osgiliath --port 35204 --info "Elronds House" --log-file osgiliath.log --connect_to_host theshire --connect_to_port 35201
 [osgiliath] 	Launching server osgiliath...
 *CMD.........	Waiting... 0.25
@@ -55,16 +55,16 @@ Beginning test 5_2_DuplicateID_Server
 [osgiliath] 	Connected to another server
 [osgiliath] 	Listening for new connections on port 35204
 [theshire] 	Received msg from Host ID #2 "b'\x00\x00\x00\x00\x02\x00\x00\x00\x00\t\x00\x0fosgiliath"Elronds House"'"
-[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
-[osgiliath] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00(Someone has already registered with ID 2'"
+[theshire] 	Sending message to an unknown IO device "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
+[osgiliath] 	Received msg from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x00\x00\x00*A machine has already registered with ID 2'"
 *CMD.........	Starting --id 102 --serverhost theshire --serverport 35201 --username samgamgee --info "Test info" --log-file samgamgee.log
 [samgamgee] 	Launching client samgamgee...
 *CMD.........	Waiting... 0.25
 [samgamgee] 	Sending message to b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'
 [theshire] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x00\t\x00\x0bsamgamgee"Test info"'"
 [rivendale] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
-[samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
-[grey_havens] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[frodobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"
+[grey_havens] 	Received msg from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x01\t\x00\x0bsamgamgee"Test info"'"[samgamgee] 	Received message from Host ID #1 "b'\x01\x00\x00\x00\x01\x00\x00\x00f\x00\x00\x00\x00\x003Welcome to the Clemson Relay Chat network samgamgee'"
 
 [samgamgee] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x01\x0c\x00\x0bfrodobaggins"Test info"'"
 *CMD.........	Starting --id 103 --serverhost rivendale --serverport 35202 --username elrond --info "Test info" --log-file elrond.log
@@ -74,10 +74,10 @@ Beginning test 5_2_DuplicateID_Server
 [rivendale] 	Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x00\x06\x00\x0belrond"Test info"'"
 [theshire] 	Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x02\x06\x00\x0belrond"Test info"'"
 [elrond] 	Received message from Host ID #2 "b'\x01\x00\x00\x00\x02\x00\x00\x00g\x00\x00\x00\x00\x000Welcome to the Clemson Relay Chat network elrond'"
-[samgamgee] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[elrond] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"
 [frodobaggins] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
-[elrond] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x02\x0c\x00\x0bfrodobaggins"Test info"'"[grey_havens] 	Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
-
+[grey_havens] 	Received msg from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
+[samgamgee] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x01\x06\x00\x0belrond"Test info"'"
 [elrond] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x02\t\x00\x0bsamgamgee"Test info"'"
 *CMD.........	Starting --id 104 --serverhost grey_havens --serverport 35203 --username bilbobaggins --info "Test info" --log-file bilbobaggins.log
 [bilbobaggins] 	Launching client bilbobaggins...
@@ -86,20 +86,20 @@ Beginning test 5_2_DuplicateID_Server
 [grey_havens] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x00\x0c\x00\x0bbilbobaggins"Test info"'"
 [theshire] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x03\x0c\x00\x0bbilbobaggins"Test info"'"
 [bilbobaggins] 	Received message from Host ID #3 "b'\x01\x00\x00\x00\x03\x00\x00\x00h\x00\x00\x00\x00\x006Welcome to the Clemson Relay Chat network bilbobaggins'"
-[rivendale] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
-[samgamgee] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
-[frodobaggins] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
 [bilbobaggins] 	Received message from Host ID #101 "b'\x80\x00\x00\x00e\x00\x00\x00\x03\x0c\x00\x0bfrodobaggins"Test info"'"
-[elrond] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
+[samgamgee] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[rivendale] 	Received msg from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
+[frodobaggins] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x01\x0c\x00\x0bbilbobaggins"Test info"'"
 [bilbobaggins] 	Received message from Host ID #102 "b'\x80\x00\x00\x00f\x00\x00\x00\x03\t\x00\x0bsamgamgee"Test info"'"
+[elrond] 	Received message from Host ID #104 "b'\x80\x00\x00\x00h\x00\x00\x00\x02\x0c\x00\x0bbilbobaggins"Test info"'"
 [bilbobaggins] 	Received message from Host ID #103 "b'\x80\x00\x00\x00g\x00\x00\x00\x03\x06\x00\x0belrond"Test info"'"
 [theshire] 	Cleaning up the server
 [frodobaggins] 	Server has disconnected!
-[samgamgee] 	Server has disconnected!
 [rivendale] 	Cleaning up the server
+[samgamgee] 	Server has disconnected!
 [elrond] 	Server has disconnected!
 [grey_havens] 	Cleaning up the server
 [bilbobaggins] 	Server has disconnected!
 [osgiliath] 	Cleaning up the server
 
-Test passed:False
+Test passed:True

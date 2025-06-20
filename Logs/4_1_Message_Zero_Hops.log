@@ -28,7 +28,7 @@ Beginning test 4_1_Message_Zero_Hops
 [theshire] 	Sending message to Host ID #101 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0f"Testing 1 2 3"'"
 [frodobaggins] 	Received message from Host ID #102 "b'\x81\x00\x00\x00f\x00\x00\x00e\x00\x00\x00\x0f"Testing 1 2 3"'"
 [theshire] 	Cleaning up the server
-[samgamgee] 	Server has disconnected!
 [frodobaggins] 	Server has disconnected!
 
 Test passed:True
+[samgamgee] 	Server has disconnected!
