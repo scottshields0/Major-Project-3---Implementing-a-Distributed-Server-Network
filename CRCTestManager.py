@@ -146,11 +146,11 @@ if __name__ == "__main__":
 
         # This batch of tests evaluates how your code handles Status Update messages. 
         # In addition to the methods required for previous tests, you also need to complete the following method
-# to pass these tests: handle_status_message().
-#'5_1_WelcomeStatus':2,
-#'5_2_DuplicateID_Server':2,
-#'5_3_DuplicateID_Client':2,
-#'5_4_UnknownID_Client':2,
+        # to pass these tests: handle_status_message().
+        #'5_1_WelcomeStatus':2,
+        #'5_2_DuplicateID_Server':2,
+        #'5_3_DuplicateID_Client':2,
+        #'5_4_UnknownID_Client':2,
 
 
         # This batch of tests evaluates how your code handles Client Quit messages. 
